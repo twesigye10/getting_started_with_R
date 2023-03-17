@@ -17,12 +17,13 @@ knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
 
 R is a scripting language known for its simple syntax.
 It is suitable for anyone desiring start or enhance their journey in
-data management and analysis and scientific research. It can be used to
+data management, analysis and scientific research. It can be used to
 retrieve data, clean, analyse and visualize the data.
 
 - Simple syntax
 - Variety of packages to handle wide range of tasks
 - Powerful RStudio IDE for simplify code management and getting started
+- Also R has a large community of users and you will easily get support
 
 ### Installing R and RStudio
 
@@ -32,7 +33,17 @@ RStudio makes using R much easier and more interactive.
 
 ### Installing R
 
-Download the installation file from ****
+Download the R installation file from **[Download](https://cran.r-project.org/bin/windows/base/)**.
+
+Run the downloaded file and accept prompts to install.
+
+Download the R installation file from **[Download](https://cran.r-project.org/bin/windows/base/)**.
+
+Run the downloaded file and accept prompts as well.
+
+### RStudio Interface
+
+
 
 ```{r }
 
