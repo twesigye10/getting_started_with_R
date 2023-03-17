@@ -2,7 +2,12 @@
 title: "R_programming"
 author: "REACH"
 date: "`r Sys.Date()`"
-output: html_document
+output:
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
 ---
 
 ```{r setup, include=FALSE}
@@ -11,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
 
 # {.tabset}
 
-## Session 1 
+## Setting up the environment
 
 ### why R
 
@@ -28,7 +33,7 @@ retrieve data, clean, analyse and visualize the data.
 ### Installing R and RStudio
 
 Before we start coding, we need to setup the coding environment. 
-We shall install R and RStudio the graphical Integrated Development Environment for R.
+We shall install R and RStudio the graphical Integrated Development Environment (**IDE**) for R.
 RStudio makes using R much easier and more interactive.
 
 ### Installing R
@@ -65,6 +70,7 @@ print("Hello world")
 ```
 
 simple calculations
+
 ```{r}
 1 + 5
 ```
@@ -76,6 +82,36 @@ We can create new scripts and put our commands that R should perform.
 Follow the steps shown in the figure to create a new file.
 
 ![](../img/new_file.png)
+Let us now add the previous code into the script and save the script.
+
+```{r}
+print("Hello world")
+
+# This is a comment
+# simple calculations
+1 + 5
+```
+
+### Variable assignment
+
+We use **`<-`** symbol to assign objects to variables. 
+
+This symbol has the followig shortcut on windows computers **`alt + -`**
+
+```{r}
+# assigning
+greeting <- "Hello"
+
+print(greeting)
+
+# joining strings
+my_name <- "John"
+greeting_2 <- paste(greeting, ":", my_name)
+
+print(greeting_2)
+
+```
+
 
 ## Session 2
 
