@@ -11,6 +11,21 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Session 1 {.tabset}
 
+### R programming
+
+R is a scripting language known for its simple syntax.\ 
+It is suitable for anyone desiring start or enhance their journey in\ 
+data management and analysis and scientific research. It can be used to\
+retrieve data, clean, analyse and visualize the data.
+
+### why R
+
+- Simple syntax
+- Variety of packages to handle wide range of tasks
+- Powerful RStudio IDE for simplify code management and getting started
+
+### Installing R and RStudio
+
 
 ```{r }
 
