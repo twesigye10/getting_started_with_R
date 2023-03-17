@@ -6,19 +6,19 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
 ```
 
-## Session 1 {.tabset}
+# {.tabset}
 
-### R programming
-
-R is a scripting language known for its simple syntax.\ 
-It is suitable for anyone desiring start or enhance their journey in\ 
-data management and analysis and scientific research. It can be used to\
-retrieve data, clean, analyse and visualize the data.
+## Session 1 
 
 ### why R
+
+R is a scripting language known for its simple syntax.
+It is suitable for anyone desiring start or enhance their journey in
+data management and analysis and scientific research. It can be used to
+retrieve data, clean, analyse and visualize the data.
 
 - Simple syntax
 - Variety of packages to handle wide range of tasks
@@ -26,19 +26,26 @@ retrieve data, clean, analyse and visualize the data.
 
 ### Installing R and RStudio
 
+Before we start coding, we need to setup the coding environment. 
+We shall install R and RStudio the graphical Integrated Development Environment for R.
+RStudio makes using R much easier and more interactive.
+
+### Installing R
+
+Download the installation file from ****
 
 ```{r }
 
 ```
 
-## Session 2 {.tabset}
+## Session 2
 
 
 ```{r }
 
 ```
 
-## Session 3 {.tabset}
+## Session 3
 
 
 ```{r }
