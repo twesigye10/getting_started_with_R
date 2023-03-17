@@ -52,9 +52,26 @@ RStudio is divided into 4 panels
 
 ![](../img/interface.png)
 
-```{r }
+### Interacting with RStudio
 
+#### a) Using the RStudio console
+
+We can use RStudio console to give commands to R on what it should do.
+
+write the line below in the console and hit enter
+
+```{r}
+print("Hello world")
 ```
+
+simple calculations
+```{r}
+1 + 5
+```
+
+#### b) Creating script files
+
+We can create new scripts and put our commands that R should perform.
 
 ## Session 2
 
