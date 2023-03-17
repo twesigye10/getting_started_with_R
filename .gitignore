@@ -1,0 +1,16 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+*.html
+*.xlsx
+*.xls
+.csv
+.pdf
+.doc
+.docx
+inputs/*
+outputs/*
+support_files/*
+!/**/.gitkeep
