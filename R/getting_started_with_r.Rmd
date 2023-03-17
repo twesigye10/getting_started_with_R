@@ -73,6 +73,10 @@ simple calculations
 
 We can create new scripts and put our commands that R should perform.
 
+Follow the steps shown in the figure to create a new file.
+
+![](../img/new_file.png)
+
 ## Session 2
 
 
