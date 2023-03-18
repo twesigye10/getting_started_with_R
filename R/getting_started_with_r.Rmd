@@ -125,6 +125,8 @@ creating functions for repetitive tasks
 
 ```
 
+#### Getting help on functions
+
 
 ## Data types and structures
 
