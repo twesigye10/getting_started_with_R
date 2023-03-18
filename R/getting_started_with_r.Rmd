@@ -190,6 +190,9 @@ vector_num[1]
 # last element
 vector_num[length(vector_num)]
 
+# particular elements
+vector_num[vector_num > 15]
+
 ```
 
 
