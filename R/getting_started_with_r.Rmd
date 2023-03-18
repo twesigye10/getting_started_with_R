@@ -113,14 +113,45 @@ print(greeting_2)
 ```
 
 
-## Session 2
+## Common data types in R
+
+### Vectors
+
+### lists
+
+### Dataframes
 
 
 ```{r }
 
 ```
 
-## Session 3
+## Functions
+
+what are functions
+
+building up on paste()
+
+creating functions for repetitive tasks
+
+```{r }
+
+```
+
+## Useful functions for data mgt
+
+reading and writing files,
+select,
+mutate, 
+filter, 
+group_by,
+summarise
+
+```{r }
+
+```
+
+## Creating reports in R
 
 
 ```{r }
