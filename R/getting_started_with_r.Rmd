@@ -140,7 +140,59 @@ class(my_data)
 
 ### Vectors
 
-A vector is a common data type in R and is composed of a series of values that are either numbers or characters.
+A vector is a common data type in R and is composed of a series of values that are of the same data type. Either numbers or characters or logical.
+
+We create a vector using the `c()` function and seperate the items using a comma.
+
+```{r}
+# Create a vector.
+fisher_men <- c('Peter', 'Andrew','James',"John") # character vector
+print(fisher_men)
+
+# Get the class of our vector.
+print(class(fisher_men))
+
+vector_num <- c(11, 101, 23, 50.3) # numeric vector 
+class_vec_num <- class(vector_num)
+
+vector_log <- c(TRUE, FALSE, FALSE, TRUE) # logical vector
+class_vec_log <- class(vector_log)
+
+print(paste("The class of vector_num is: ", class_vec_num))
+print(paste("The class of vector_log is: ", class_vec_log))
+
+```
+
+#### Subsetting vectors
+
+To access elements of a vector, we use indices. The index of the first element in a vector is **1**, the second is **2** ...
+
+We provide the index in square brackets to retrieve the desired element from the vector.
+
+```{r}
+
+fisher_men <- c('Peter', 'Andrew','James',"John") # character vector
+
+# first element
+fisher_men[1]
+
+# last element
+fisher_men[length(fisher_men)]
+
+# particular elements
+fisher_men[fisher_men %in% c("John", "Andrew")]
+
+vector_num <- c(11, 101, 23, 50.3) # numeric vector 
+
+# first element
+vector_num[1]
+
+# last element
+vector_num[length(vector_num)]
+
+```
+
+
 
 ### lists
 
