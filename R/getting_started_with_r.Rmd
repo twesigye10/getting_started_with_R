@@ -161,7 +161,7 @@ We create a vector using the **`c()`** function and seperate the items using a c
 
 ```{r}
 # Create a vector.
-fisher_men <- c('Peter', 'Andrew','James',"John") # character vector
+fisher_men <- c("Peter", "Andrew", "James", "John") # character vector
 print(fisher_men)
 
 # Get the class of our vector.
@@ -186,7 +186,7 @@ We provide the index in square brackets to retrieve the desired element from the
 
 ```{r}
 
-fisher_men <- c('Peter', 'Andrew','James',"John") # character vector
+fisher_men <- c("Peter", "Andrew", "James", "John") # character vector
 
 # first element
 fisher_men[1]
@@ -216,12 +216,12 @@ Repeat vectors using the **`rep()`** function
 
 ```{r}
 # each
-rep(c('Peter', 'Andrew','James',"John"), each = 5)
+rep(c("Peter", "Andrew", "James", "John"), each = 5)
 
 # times
-rep(c('Peter', 'Andrew','James',"John"), times = 5)
+rep(c("Peter", "Andrew", "James", "John"), times = 5)
 
-rep(c('Peter', 'Andrew','James',"John"), times = c(4, 2, 3, 1))
+rep(c("Peter", "Andrew", "James", "John"), times = c(4, 2, 3, 1))
 
 ```
 
@@ -248,7 +248,7 @@ A list can contain objects of different data types (mixture of numeric, characte
 We use the **`list()`** function to create a list.
 
 ```{r}
-fisher_men <- c('Peter', 'Andrew','James',"John") # character vector
+fisher_men <- c("Peter", "Andrew", "James", "John") # character vector
 
 vector_num <- c(11, 101, 23, 50.3) # numeric vector 
 
