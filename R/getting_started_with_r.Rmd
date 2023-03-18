@@ -113,9 +113,22 @@ print(greeting_2)
 ```
 
 
-## Common data types in R
+## Data structures and types
+
+### Data types
+
+Variables can store data of different data types.
+In R, the data type of the R-object becomes the data type of the variable.
+
+- **numeric** - (6.5, 71, 217)
+- **integer** - (1L, 33L, 301L, where the letter "L" declares this as an integer)
+- **complex** - (9 + 3i, where "i" is the imaginary part)
+- **character (a.k.a. string)**  - ("c",  "TRUE", "R is exciting", "FALSE", "23.1")
+- **logical (a.k.a. boolean)**  - (TRUE or FALSE)
 
 ### Vectors
+
+A vector is a common data type in R and is composed of a series of values that are either numbers or characters.
 
 ### lists
 
