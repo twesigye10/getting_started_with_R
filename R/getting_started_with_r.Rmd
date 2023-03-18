@@ -195,6 +195,35 @@ vector_num[vector_num > 15]
 
 ```
 
+#### Repeat vectors
+
+Repeat vectors using the `rep()` function
+
+```{r}
+# each
+rep(c('Peter', 'Andrew','James',"John"), each = 5)
+
+# times
+rep(c('Peter', 'Andrew','James',"John"), times = 5)
+
+rep(c('Peter', 'Andrew','James',"John"), times = c(4, 2, 3, 1))
+
+```
+
+#### Sequenced vectors
+Use the `:` symbol or `seq()` function to create a vector of sequencies.
+```{r}
+# using ':'
+1:20
+
+# using 'seq()'
+seq(from = 1, to = 20, by = 1)
+
+seq(from = 1, to = 20, by = 4)
+
+seq(from = 1, to = 100, by = 5)
+
+```
 
 
 ### lists
