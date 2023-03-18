@@ -228,6 +228,34 @@ seq(from = 1, to = 100, by = 5)
 
 ### lists
 
+A list can contain objects of different data types (mixture of numeric, character, logical ...)
+
+We use the **`list()`** function to create a list.
+
+```{r}
+fisher_men <- c('Peter', 'Andrew','James',"John") # character vector
+
+vector_num <- c(11, 101, 23, 50.3) # numeric vector 
+
+vector_log <- c(TRUE, FALSE, FALSE, TRUE, FALSE)
+
+my_list <- list(fisher_men, vector_num, vector_log)
+
+# access elements of a list
+my_list[[1]]
+my_list[[length(my_list)]]
+
+# typeof()
+typeof(my_list)
+
+# length()
+length(my_list)
+# last element of a list
+my_list[[length(my_list)]]
+
+```
+
+
 ### Dataframes
 
 
