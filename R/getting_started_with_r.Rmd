@@ -126,7 +126,7 @@ In R, the data type of the R-object becomes the data type of the variable.
 - **character (a.k.a. string)**  - ("m",  "TRUE", "Getting started with R", "FALSE", "23.1")
 - **logical (a.k.a. boolean)**  - (TRUE or FALSE)
 
-The `class()` function is used to check the data type of a variable
+The **`class()`** function is used to check the data type of a variable
 
 ```{r}
 greeting <- "Hello"
@@ -142,7 +142,7 @@ class(my_data)
 
 A vector is a common data type in R and is composed of a series of values that are of the same data type. Either numbers or characters or logical.
 
-We create a vector using the `c()` function and seperate the items using a comma.
+We create a vector using the **`c()`** function and seperate the items using a comma.
 
 ```{r}
 # Create a vector.
@@ -197,7 +197,7 @@ vector_num[vector_num > 15]
 
 #### Repeat vectors
 
-Repeat vectors using the `rep()` function
+Repeat vectors using the **`rep()`** function
 
 ```{r}
 # each
@@ -211,7 +211,7 @@ rep(c('Peter', 'Andrew','James',"John"), times = c(4, 2, 3, 1))
 ```
 
 #### Sequenced vectors
-Use the `:` symbol or `seq()` function to create a vector of sequencies.
+Use the **`:`** symbol or **`seq()`** function to create a vector of sequencies.
 ```{r}
 # using ':'
 1:20
