@@ -113,6 +113,19 @@ print(greeting_2)
 ```
 
 
+## Functions
+
+what are functions
+
+building up on paste(), print()
+
+creating functions for repetitive tasks
+
+```{r }
+
+```
+
+
 ## Data types and structures
 
 ### Data types
@@ -271,17 +284,6 @@ my_list[[length(my_list)]]
 
 ```
 
-## Functions
-
-what are functions
-
-building up on paste()
-
-creating functions for repetitive tasks
-
-```{r }
-
-```
 
 ## Useful functions for data mgt
 
