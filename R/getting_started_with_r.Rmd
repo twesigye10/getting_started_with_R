@@ -113,7 +113,7 @@ print(greeting_2)
 ```
 
 
-## Data structures and types
+## Data types and structures
 
 ### Data types
 
