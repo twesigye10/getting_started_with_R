@@ -245,6 +245,14 @@ my_list <- list(fisher_men, vector_num, vector_log)
 my_list[[1]]
 my_list[[length(my_list)]]
 
+# named list elements
+my_list <- list("first_elem" = fisher_men, 
+                "second_elem" = vector_num, 
+                "third_elem" = vector_log)
+
+my_list$first_elem
+my_list$second_elem
+
 # typeof()
 typeof(my_list)
 
