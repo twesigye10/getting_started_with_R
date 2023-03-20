@@ -382,6 +382,10 @@ my_dataframe$name
 
 ```
 
+#### Number of rows and columns
+
+we use **`dim()`** function to find the number of row and columns of a data frame.
+We can also use the **`nrow()`** function to find the number of rows and the **`ncol()`** function to find the number of columns of the dataframe.
 
 
 ## Useful functions for data mgt
