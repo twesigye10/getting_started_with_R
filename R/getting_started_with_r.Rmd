@@ -125,9 +125,23 @@ We have already used functions like **`print()`** to output some contents given 
 
 ### creating functions
 
+Apart from using the built in functions, we can also create new functions to easily perform tasks. 
+This could be trying to reduce on duplicating code for repetitive tasks or 
+as away to share code with others through functions.
+
+To define a function, we use the **`function`** keyword. The function may have or may not have arguments
+
+The function syntax can take on the format below:
 ```{r }
 
+function_name <- function(argument_1, argument_2, ...){
+  function_body
+}
 ```
+
+- **function_name**. The name of the function
+- **arguments**. The function may have several arguments/inputs depending on the needs. These could be data of different types. 
+- **function_body**. This is where we put instructions using code to perform different tasks.
 
 #### Getting help on functions
 
