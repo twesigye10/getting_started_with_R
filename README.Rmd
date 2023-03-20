@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 ```
 
 <!-- badges: start -->
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftwesigye10%2Fgetting_started_with_R%2F&count_bg=%2379C83D&title_bg=%23555555&icon=buddy.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://github.com/twesigye10/getting_started_with_R)
+
 <!-- badges: end -->
 
 # Setting up the environment
