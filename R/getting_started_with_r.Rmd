@@ -345,8 +345,12 @@ my_list[[length(my_list)]]
 ```
 
 
-### Dataframes
+### Data Frames
 
+Data frames are tabular data objects. They can store data in columns of different data types.
+Some can be `character` columns, others `numeric` and others `logical`. A data frame is a two dimensional object and stores lists of vectors of the same length.
+
+A data frame is the most common way of storing tabular (table or spreadsheet) data and is something you will work with often.
 
 ```{r }
 
