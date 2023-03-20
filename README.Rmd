@@ -2,7 +2,7 @@
 output: 
   github_document:
     toc: true
-    toc_depth: 3
+    toc_depth: 2
     number_sections: TRUE
 ---
 

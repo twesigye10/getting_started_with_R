@@ -9,11 +9,6 @@
     RStudio Interface</a>
   - <a href="#15-interacting-with-rstudio"
     id="toc-15-interacting-with-rstudio">1.5 Interacting with RStudio</a>
-    - <a href="#151-a-using-the-rstudio-console"
-      id="toc-151-a-using-the-rstudio-console">1.5.1 a) Using the RStudio
-      console</a>
-    - <a href="#152-b-creating-script-files"
-      id="toc-152-b-creating-script-files">1.5.2 b) Creating script files</a>
   - <a href="#16-variable-assignment" id="toc-16-variable-assignment">1.6
     Variable assignment</a>
 - <a href="#2-functions" id="toc-2-functions">2 Functions</a>
@@ -21,32 +16,12 @@
     is a function</a>
   - <a href="#22-creating-functions" id="toc-22-creating-functions">2.2
     creating functions</a>
-    - <a href="#221-examples-creating-functions"
-      id="toc-221-examples-creating-functions">2.2.1 Examples creating
-      functions</a>
-    - <a href="#222-calling-functions" id="toc-222-calling-functions">2.2.2
-      Calling functions</a>
-    - <a href="#223-getting-help-on-functions"
-      id="toc-223-getting-help-on-functions">2.2.3 Getting help on
-      functions</a>
 - <a href="#3-data-types-and-structures"
   id="toc-3-data-types-and-structures">3 Data types and structures</a>
   - <a href="#31-data-types" id="toc-31-data-types">3.1 Data types</a>
   - <a href="#32-vectors" id="toc-32-vectors">3.2 Vectors</a>
-    - <a href="#321-subsetting-vectors" id="toc-321-subsetting-vectors">3.2.1
-      Subsetting vectors</a>
-    - <a href="#322-repeat-vectors" id="toc-322-repeat-vectors">3.2.2 Repeat
-      vectors</a>
-    - <a href="#323-sequenced-vectors" id="toc-323-sequenced-vectors">3.2.3
-      Sequenced vectors</a>
   - <a href="#33-lists" id="toc-33-lists">3.3 lists</a>
   - <a href="#34-data-frames" id="toc-34-data-frames">3.4 Data Frames</a>
-    - <a href="#341-access-elements-of-the-data-frame"
-      id="toc-341-access-elements-of-the-data-frame">3.4.1 Access elements of
-      the data frame</a>
-    - <a href="#342-number-of-rows-and-columns"
-      id="toc-342-number-of-rows-and-columns">3.4.2 Number of rows and
-      columns</a>
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <!-- # Getting started with R -->
@@ -234,12 +209,12 @@ the functions and how these functions can be used.
 
 ``` r
 # using help()
-# help("paste")
-# help(paste)
+help("paste")
+help(paste)
 
 # using ?
-# ?"paste"
-# ?paste
+?"paste"
+?paste
 ```
 
 # 3 Data types and structures
