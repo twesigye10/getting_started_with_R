@@ -361,10 +361,25 @@ my_dataframe <- data.frame(
   height=c(1.65, 1.61, 1.72, 1.55)
 )
 ```
+
 We can check the structure of the data frame using the **`str()`** function
 
 ```{r}
 str(my_dataframe)
+```
+
+#### Access elements of the data frame
+
+We can use the **`[, [[, $`** operators to access the elements of the data frame.
+
+```{r}
+# [
+my_dataframe["name"]
+# [[
+my_dataframe[["name"]]
+# $
+my_dataframe$name
+
 ```
 
 
