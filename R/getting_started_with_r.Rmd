@@ -11,7 +11,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
+knitr::opts_chunk$set(echo = TRUE, warning = F, message = F, results = "hide")
 ```
 
 # {.tabset}
@@ -385,7 +385,18 @@ my_dataframe$name
 #### Number of rows and columns
 
 we use **`dim()`** function to find the number of row and columns of a data frame.
-We can also use the **`nrow()`** function to find the number of rows and the **`ncol()`** function to find the number of columns of the dataframe.
+We can also use the **`nrow()`** function to find the number of rows and the **`ncol()`** function to find the number of columns of the data frame.
+
+```{r}
+# dimension of the data frame
+dim(my_dataframe)
+
+# number of rows
+nrow(my_dataframe)
+
+# number of columns
+ncol(my_dataframe)
+```
 
 
 ## Useful functions for data mgt
