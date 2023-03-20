@@ -352,9 +352,21 @@ Some can be `character` columns, others `numeric` and others `logical`. A data f
 
 A data frame is the most common way of storing tabular (table or spreadsheet) data and is something you will work with often.
 
-```{r }
+We use the function **`data.frame()`** to create a data frame.
 
+```{r }
+my_dataframe <- data.frame(
+  id = 1:4,
+  name = c("Peter", "Andrew", "James", "John"),
+  height=c(1.65, 1.61, 1.72, 1.55)
+)
 ```
+We can check the structure of the data frame using the **`str()`** function
+
+```{r}
+str(my_dataframe)
+```
+
 
 
 ## Useful functions for data mgt
