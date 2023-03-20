@@ -164,6 +164,9 @@ my_multiplication <- function(first_num = 10, second_num = 6) {
 
 #### Calling functions
 
+We call functions by giving their names and supplying arguments in case they are required by the functions.
+Let us use examples from the functions we have created.
+
 ```{r}
 # call my_fullname function
 my_fullname(first_name = "John", last_name = "Peter")
@@ -175,6 +178,19 @@ my_multiplication(first_num = 125, second_num = 61) # uses supplied values to ar
 ```
 
 #### Getting help on functions
+
+If functions have documentation, lieke inbuilt function and functions from other created packages,
+we can access their documentation using the **`help()`** function or **`?`** symbol to access the documentation of the functions and how these functions can be used.
+
+```{r}
+# using help()
+help("paste")
+help(paste)
+
+# using ?
+?"paste"
+?paste
+```
 
 
 ## Data types and structures
