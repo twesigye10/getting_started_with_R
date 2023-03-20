@@ -1,10 +1,12 @@
 
-- <a href="#1-setting-up-the-environment"
-  id="toc-1-setting-up-the-environment">1 Setting up the environment</a>
+- <a href="#1-getting-started-with-r" id="toc-1-getting-started-with-r">1
+  Getting started with R</a>
   - <a href="#11-why-r" id="toc-11-why-r">1.1 why R</a>
-  - <a href="#12-installing-r-and-rstudio"
-    id="toc-12-installing-r-and-rstudio">1.2 Installing R and RStudio</a>
-  - <a href="#13-installing-r" id="toc-13-installing-r">1.3 Installing R</a>
+  - <a href="#12-setting-up-the-environment"
+    id="toc-12-setting-up-the-environment">1.2 Setting up the
+    environment</a>
+  - <a href="#13-installing-r-and-rstudio"
+    id="toc-13-installing-r-and-rstudio">1.3 Installing R and RStudio</a>
   - <a href="#14-rstudio-interface" id="toc-14-rstudio-interface">1.4
     RStudio Interface</a>
   - <a href="#15-interacting-with-rstudio"
@@ -27,7 +29,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-# 1 Setting up the environment
+# 1 Getting started with R
 
 ## 1.1 why R
 
@@ -41,14 +43,14 @@ clean, analyse and visualize the data.
 - Powerful RStudio IDE for simplify code management and getting started
 - Also R has a large community of users and you will easily get support
 
-## 1.2 Installing R and RStudio
+## 1.2 Setting up the environment
 
 Before we start coding, we need to setup the coding environment. We
 shall install R and RStudio the graphical Integrated Development
 Environment (**IDE**) for R. RStudio makes using R much easier and more
 interactive.
 
-## 1.3 Installing R
+## 1.3 Installing R and RStudio
 
 **[Download the R installation
 file](https://cran.r-project.org/bin/windows/base/)**.

@@ -22,7 +22,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: end -->
 
-# Setting up the environment
+# Getting started with R
 
 ## why R
 
@@ -36,13 +36,13 @@ retrieve data, clean, analyse and visualize the data.
 - Powerful RStudio IDE for simplify code management and getting started
 - Also R has a large community of users and you will easily get support
 
-## Installing R and RStudio
+## Setting up the environment
 
 Before we start coding, we need to setup the coding environment. 
 We shall install R and RStudio the graphical Integrated Development Environment (**IDE**) for R.
 RStudio makes using R much easier and more interactive.
 
-## Installing R
+## Installing R and RStudio
 
 **[Download the R installation file](https://cran.r-project.org/bin/windows/base/)**.
 
