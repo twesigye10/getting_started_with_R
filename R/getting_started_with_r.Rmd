@@ -147,7 +147,9 @@ function_name <- function(argument_1, argument_2, ...){
 ```{r}
 # a function to join entered names
 my_fullname <- function(first_name, last_name) {
-  combined_name <- paste("My name is: ", first_name, last_name)
+  combined_name <- paste("My name is: ", 
+                         first_name, 
+                         toupper(last_name))
   print(combined_name)
 }
 ```
