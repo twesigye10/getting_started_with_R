@@ -268,11 +268,12 @@ my_list <- list("first_elem" = fisher_men,
 my_list$first_elem
 my_list$second_elem
 
-# typeof()
+# Get the type of an object using the typeof() function
 typeof(my_list)
 
-# length()
+# Get the length of the list using the length() function
 length(my_list)
+
 # last element of a list
 my_list[[length(my_list)]]
 
