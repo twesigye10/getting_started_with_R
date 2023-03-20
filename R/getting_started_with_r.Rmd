@@ -14,8 +14,6 @@ output:
 knitr::opts_chunk$set(echo = TRUE, warning = F, message = F, results = "hide")
 ```
 
-# {.tabset}
-
 ## Setting up the environment
 
 ### why R
