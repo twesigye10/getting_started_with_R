@@ -115,11 +115,15 @@ print(greeting_2)
 
 ## Functions
 
-what are functions
+### What is a function
 
-building up on paste(), print()
+A function is a block of code that performs a specific task when instructed or called to do the task.
 
-creating functions for repetitive tasks
+Programming languages have built in functions and developers can also create their own functions to perform desired tasks.
+
+We have already used functions like **`print()`** to output some contents given and the **`paste()`** function to concatenate/join strings. These are built in function that we can use to perform the tasks for which they were created.
+
+### creating functions
 
 ```{r }
 
