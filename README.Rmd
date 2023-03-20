@@ -42,7 +42,7 @@ Before we start coding, we need to setup the coding environment.
 We shall install R and RStudio the graphical Integrated Development Environment (**IDE**) for R.
 RStudio makes using R much easier and more interactive.
 
-## Installing R and RStudio
+### Installing R and RStudio
 
 **[Download the R installation file](https://cran.r-project.org/bin/windows/base/)**.
 
@@ -98,7 +98,7 @@ print("Hello world")
 1 + 5
 ```
 
-## Variable assignment
+### Variable assignment
 
 We use **`<-`** symbol to assign objects to variables. 
 

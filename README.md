@@ -5,14 +5,10 @@
   - <a href="#12-setting-up-the-environment"
     id="toc-12-setting-up-the-environment">1.2 Setting up the
     environment</a>
-  - <a href="#13-installing-r-and-rstudio"
-    id="toc-13-installing-r-and-rstudio">1.3 Installing R and RStudio</a>
-  - <a href="#14-rstudio-interface" id="toc-14-rstudio-interface">1.4
+  - <a href="#13-rstudio-interface" id="toc-13-rstudio-interface">1.3
     RStudio Interface</a>
-  - <a href="#15-interacting-with-rstudio"
-    id="toc-15-interacting-with-rstudio">1.5 Interacting with RStudio</a>
-  - <a href="#16-variable-assignment" id="toc-16-variable-assignment">1.6
-    Variable assignment</a>
+  - <a href="#14-interacting-with-rstudio"
+    id="toc-14-interacting-with-rstudio">1.4 Interacting with RStudio</a>
 - <a href="#2-functions" id="toc-2-functions">2 Functions</a>
   - <a href="#21-what-is-a-function" id="toc-21-what-is-a-function">2.1 What
     is a function</a>
@@ -50,7 +46,7 @@ shall install R and RStudio the graphical Integrated Development
 Environment (**IDE**) for R. RStudio makes using R much easier and more
 interactive.
 
-## 1.3 Installing R and RStudio
+### 1.2.1 Installing R and RStudio
 
 **[Download the R installation
 file](https://cran.r-project.org/bin/windows/base/)**.
@@ -62,7 +58,7 @@ file](https://posit.co/download/rstudio-desktop/)**.
 
 Run the downloaded file and accept prompts as well.
 
-## 1.4 RStudio Interface
+## 1.3 RStudio Interface
 
 RStudio is divided into 4 panels
 
@@ -73,9 +69,9 @@ RStudio is divided into 4 panels
 
 ![](img/interface.png)
 
-## 1.5 Interacting with RStudio
+## 1.4 Interacting with RStudio
 
-### 1.5.1 a) Using the RStudio console
+### 1.4.1 a) Using the RStudio console
 
 We can use RStudio console to give commands to R on what it should do.
 
@@ -91,7 +87,7 @@ simple calculations
 1 + 5
 ```
 
-### 1.5.2 b) Creating script files
+### 1.4.2 b) Creating script files
 
 We can create new scripts and put our commands that R should perform.
 
@@ -108,7 +104,7 @@ print("Hello world")
 1 + 5
 ```
 
-## 1.6 Variable assignment
+### 1.4.3 Variable assignment
 
 We use **`<-`** symbol to assign objects to variables.
 
