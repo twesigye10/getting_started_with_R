@@ -10,6 +10,7 @@ output:
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
+  eval = FALSE,
   collapse = TRUE,
   comment = "#>",
   warning = F, 
@@ -404,3 +405,33 @@ nrow(my_dataframe)
 ncol(my_dataframe)
 ```
 
+# Practice 1
+
+We are going to practice with swirl. **[swirl](https://swirlstats.com/)** is an R package that consists of a collection of interactive courses for learning R.
+
+## Install swirl
+
+Use the following code to install the swirl package.
+
+```{r}
+install.packages("swirl")
+```
+
+## Start swirl
+
+load the **`swirl`** package using the **`libray()`** function to load the functions in the package. 
+
+```{r}
+library("swirl")
+```
+
+## Install and runcourse
+
+Use the **`install_course()`** function to install the **`R_Programming_E`** course we shall be following for our first practice. 
+
+```{r}
+install_course("R_Programming_E")
+swirl()
+```
+
+Enjoy coding.

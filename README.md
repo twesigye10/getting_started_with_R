@@ -20,6 +20,12 @@
   - <a href="#32-vectors" id="toc-32-vectors">3.2 Vectors</a>
   - <a href="#33-lists" id="toc-33-lists">3.3 lists</a>
   - <a href="#34-data-frames" id="toc-34-data-frames">3.4 Data Frames</a>
+- <a href="#4-practice-1" id="toc-4-practice-1">4 Practice 1</a>
+  - <a href="#41-install-swirl" id="toc-41-install-swirl">4.1 Install
+    swirl</a>
+  - <a href="#42-start-swirl" id="toc-42-start-swirl">4.2 Start swirl</a>
+  - <a href="#43-install-and-runcourse"
+    id="toc-43-install-and-runcourse">4.3 Install and runcourse</a>
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <!-- badges: start -->
@@ -426,3 +432,39 @@ nrow(my_dataframe)
 # number of columns
 ncol(my_dataframe)
 ```
+
+# 4 Practice 1
+
+We are going to practice with swirl.
+**[swirl](https://swirlstats.com/)** is an R package that consists of a
+collection of interactive courses for learning R.
+
+## 4.1 Install swirl
+
+Use the following code to install the swirl package.
+
+``` r
+install.packages("swirl")
+```
+
+## 4.2 Start swirl
+
+load the **`swirl`** package using the **`libray()`** function to load
+the functions in the package.
+
+``` r
+library("swirl")
+```
+
+## 4.3 Install and runcourse
+
+Use the **`install_course()`** function to install the
+**`R_Programming_E`** course we shall be following for our first
+practice.
+
+``` r
+install_course("R_Programming_E")
+swirl()
+```
+
+Enjoy coding.
