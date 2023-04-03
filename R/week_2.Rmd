@@ -1,0 +1,17 @@
+---
+title: "week_2"
+author: "REACH"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = F, message = F, results = "hide")
+```
+
+# Reading and manipulating data
