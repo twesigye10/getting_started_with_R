@@ -15,3 +15,16 @@ knitr::opts_chunk$set(echo = TRUE, warning = F, message = F, results = "hide")
 ```
 
 # Reading and manipulating data
+
+## R Packages
+what are they, installation, and use/ loading
+
+
+## Reading and writing files
+
+
+## Manipulating data
+
+
+## Pipes
+
