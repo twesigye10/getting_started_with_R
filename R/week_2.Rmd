@@ -11,7 +11,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = F, message = F, results = "hide")
+knitr::opts_chunk$set(eval = FALSE, echo = TRUE, warning = F, message = F, results = "hide")
 ```
 
 # Reading and manipulating data
@@ -23,7 +23,7 @@ We can use functions provided in the base system where applicable or functions i
 
 ### What are packages
 R comes with functionality in the base system. This functionality is what you get when you download and install R.
-This can be extended using containers (packages) that have other functionality or different workflow. These packages contain functions to perform specific tasks.
+This can be extended using containers (packages) that have other functionality or different implementation. These packages contain functions to perform specific tasks.
 
 ### Package installation
 
@@ -35,8 +35,8 @@ For packages on The Comprehensive R Archive Network (CRAN), you can install them
 install.packages("tidyverse")
 ```
 
-**NOTE** For packages under development by developers that may not be on CRAN, we can install them using the **devtools** or **remotes** packages. Let us install the **devtools** package. With **install.packages("devtools")**.
-We can now install a package using devtools
+**NOTE** For packages under development by developers that may not be on CRAN, we can install them using the **devtools** or **remotes** packages. Let us install the **devtools** package with **install.packages("devtools")**.
+> We can now install a package using devtools
 
 ```{r}
 install.packages("devtools")
