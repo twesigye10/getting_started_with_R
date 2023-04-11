@@ -30,6 +30,7 @@ This can be extended using containers (packages) that have other functionality o
 For packages on The Comprehensive R Archive Network (CRAN), you can install them using the **install.packages()** function, specifying the name of the function in quotes. This can be done in the console pane since we do not need to save this in a script.
 
 > The code below will install all tidyverse related packages.
+**[tidyverse](https://www.tidyverse.org/)** is a group of packages designed with a similar philosophy, grammar, and data structures aimed at simplifying data management and analysis.
 
 ```{r}
 install.packages("tidyverse")
@@ -54,11 +55,6 @@ library(tidyverse)
 library(supporteR)
 
 ```
-
-
-
-
-
 
 
 ## Reading and writing files
