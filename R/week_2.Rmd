@@ -16,8 +16,49 @@ knitr::opts_chunk$set(echo = TRUE, warning = F, message = F, results = "hide")
 
 # Reading and manipulating data
 
-## R Packages
-what are they, installation, and use/ loading
+In order to manipulate data, we need to create, read/import data into the R environment using appropriate functions.
+We can use functions provided in the base system where applicable or functions in other containers (packages) specialized for specific file types. 
+
+## Extending R base functionality with packages
+
+### What are packages
+R comes with functionality in the base system. This functionality is what you get when you download and install R.
+This can be extended using containers (packages) that have other functionality or different workflow. These packages contain functions to perform specific tasks.
+
+### Package installation
+
+For packages on The Comprehensive R Archive Network (CRAN), you can install them using the **install.packages()** function, specifying the name of the function in quotes. This can be done in the console pane since we do not need to save this in a script.
+
+> The code below will install all tidyverse related packages.
+
+```{r}
+install.packages("tidyverse")
+```
+
+**NOTE** For packages under development by developers that may not be on CRAN, we can install them using the **devtools** or **remotes** packages. Let us install the **devtools** package. With **install.packages("devtools")**.
+We can now install a package using devtools
+
+```{r}
+install.packages("devtools")
+
+devtools::install_github("twesigye10/supporteR")
+
+```
+
+### Package loading
+
+We can load packages using the **library()** function. 
+
+```{r}
+library(tidyverse)
+library(supporteR)
+
+```
+
+
+
+
+
 
 
 ## Reading and writing files
