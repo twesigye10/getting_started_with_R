@@ -89,16 +89,18 @@ write_csv(x = df_iris, file = "outputs/iris_exported_data.csv")
 
 ### select
 
-We use the `select()` function to subset columns. That is to choose/remove columns of interest from the data frame and work only with the desired columns.
+We use the `select()` function from the `dplyr` package to subset columns. That is to choose/remove columns of interest from the data frame and work only with the desired columns.
 
 With `iris` example we are going to select columns of interest by
 
 ```{r}
 library(tidyverse)
+
 df_iris <- read_csv("inputs/iris_data.csv")
 
 select(.data = df_iris, Species, Petal.Length)
 select(.data = df_iris, c("Species", "Petal.Length"))
+
 # another way. Using a pattern
 select(.data = df_iris, starts_with("Sepal."))
 
