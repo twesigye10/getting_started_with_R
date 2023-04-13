@@ -81,13 +81,39 @@ We can also write a `csv` file using the same approach but with the `write_csv()
 ```{r}
 library(tidyverse)
 # write_csv is a function inside readr package of tidyverse
-df_iris <- write_csv("outputs/iris_exported_data.csv")
+write_csv(x = df_iris, file = "outputs/iris_exported_data.csv")
 
 ```
 
 ## Manipulating data
 
-add some columns on the imported data
+### select
+
+We use the `select()` functions to subset columns. That is to choose/remove columns of interest from the data frame.
+
+With `iris` example we are going to select columns of interest by
+
+```{r}
+library(tidyverse)
+df_iris <- read_csv("inputs/iris_data.csv")
+
+select(.data = df_iris, Species, Petal.Length)
+select(.data = df_iris, c("Species", "Petal.Length"))
+# another way. Using a pattern
+select(.data = df_iris, starts_with("Sepal."))
+
+select(.data = df_iris, ends_with(".Width"))
+
+```
+
+### filter
+
+### mutate
+
+### rename
+
+### summarise
+
 
 ## Pipes
 
