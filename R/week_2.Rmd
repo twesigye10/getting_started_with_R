@@ -89,7 +89,7 @@ write_csv(x = df_iris, file = "outputs/iris_exported_data.csv")
 
 ### select
 
-We use the `select()` functions to subset columns. That is to choose/remove columns of interest from the data frame.
+We use the `select()` function to subset columns. That is to choose/remove columns of interest from the data frame and work only with the desired columns.
 
 With `iris` example we are going to select columns of interest by
 
