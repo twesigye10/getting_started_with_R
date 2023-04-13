@@ -59,7 +59,7 @@ library(supporteR)
 
 Before we start reading and writing files, let us add more sub folders to our project.
 
-We can use supporteR to easily create sub folders in our project using the  **create_project_sub_folders()** function. This will help us to keep the folder names uniform as we walk the journey together.
+We can use `supporteR` to easily create sub folders in our project using the  `**create_project_sub_folders()**` function. This will help us to keep the folder names uniform as we walk the journey together. You can write the following code in the console and hit enter.
 
 ```{r}
 supporteR::create_project_sub_folders()
@@ -67,7 +67,23 @@ supporteR::create_project_sub_folders()
 
 ## Reading and writing files
 
-export and read in iris data
+We are going to use `iris` data that is included the `datasets` package. This data has been exported into a `csv` for illustration purposes. We are now going to read in this data stored in the `inputs` folder of the project.
+
+```{r}
+library(tidyverse)
+# read_csv is a function inside readr package of tidyverse
+df_iris <- read_csv("inputs/iris_data.csv")
+
+```
+
+We can also write a `csv` file using the same approach but with the `write_csv()` function from the same `readr` package.
+
+```{r}
+library(tidyverse)
+# write_csv is a function inside readr package of tidyverse
+df_iris <- write_csv("outputs/iris_exported_data.csv")
+
+```
 
 ## Manipulating data
 
