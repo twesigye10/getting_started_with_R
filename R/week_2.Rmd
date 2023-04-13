@@ -57,6 +57,13 @@ library(supporteR)
 
 ```
 
+Before we start reading and writing files, let us add more sub folders to our project.
+
+We can use supporteR to easily create sub folders in our project using the  **create_project_sub_folders()** function. This will help us to keep the folder names uniform as we walk the journey together.
+
+```{r}
+supporteR::create_project_sub_folders()
+```
 
 ## Reading and writing files
 
