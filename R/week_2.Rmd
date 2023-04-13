@@ -110,6 +110,26 @@ select(.data = df_iris, ends_with(".Width"))
 
 ### filter
 
+We use the `filter()` function from the `dplyr` package to subset rows of interest.
+
+```{r}
+library(tidyverse)
+
+df_iris <- read_csv("inputs/iris_data.csv")
+
+# considering one specific entry
+filter(.data = df_iris, Species %in% c("versicolor"))
+# considering two specific entry
+filter(.data = df_iris, Species %in% c("versicolor", "virginica"))
+# considering key word
+filter(.data = df_iris, str_detect(string = Species, pattern = "versi"))
+
+# considering more than one column
+filter(.data = df_iris, Sepal.Length > 5, str_detect(string = Species, pattern = "versi"))
+
+```
+    
+
 ### mutate
 
 ### rename
