@@ -110,7 +110,7 @@ select(.data = df_iris, ends_with(".Width"))
 
 ### filter
 
-We use the `filter()` function from the `dplyr` package to subset rows of interest.
+We use the `filter()` function from the `dplyr` package to subset rows of interest. This can be based on entries in one column or more columns.
 
 ```{r}
 library(tidyverse)
@@ -129,7 +129,6 @@ filter(.data = df_iris, Sepal.Length > 5, str_detect(string = Species, pattern =
 
 ```
     
-
 ### mutate
 
 ### rename
