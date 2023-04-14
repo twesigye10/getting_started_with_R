@@ -435,3 +435,229 @@ swirl()
 ```
 
 Enjoy coding.
+
+
+# Reading and manipulating data
+
+In order to manipulate data, we need to create, read/import data into the R environment using appropriate functions.
+We can use functions provided in the base system where applicable or functions in other containers (packages) specialized for specific file types. 
+
+## Extending R base functionality
+
+## What are packages
+R comes with functionality in the base system. This functionality is what you get when you download and install R.
+This can be extended using containers (packages) that have other functionality or different implementation. These packages contain functions to perform specific tasks.
+
+## Package installation
+
+For packages on The Comprehensive R Archive Network (CRAN), you can install them using the **install.packages()** function, specifying the name of the function in quotes. This can be done in the console pane since we do not need to save this in a script.
+
+> The code below will install all tidyverse related packages.
+**[tidyverse](https://www.tidyverse.org/)** is a group of packages designed with a similar philosophy, grammar, and data structures aimed at simplifying data management and analysis.
+
+```{r}
+install.packages("tidyverse")
+```
+
+**NOTE** For packages under development by developers that may not be on CRAN, we can install them using the **devtools** or **remotes** packages. Let us install the **devtools** package with **install.packages("devtools")**.
+
+> We can now install a package using devtools
+
+```{r}
+install.packages("devtools")
+
+devtools::install_github("twesigye10/supporteR")
+
+```
+
+## Package loading
+
+We can load packages using the **library()** function. 
+
+```{r}
+library(tidyverse)
+library(supporteR)
+
+```
+
+Before we start reading and writing files, let us add more sub folders to our project.
+
+We can use `supporteR` to easily create sub folders in our project using the  `**create_project_sub_folders()**` function. This will help us to keep the folder names uniform as we walk the journey together. You can write the following code in the console and hit enter.
+
+```{r}
+supporteR::create_project_sub_folders()
+```
+
+# Reading and writing files
+
+We are going to use `iris` data that is included the `datasets` package. This data has been exported into a `csv` for illustration purposes. We are now going to read in this data stored in the `inputs` folder of the project.
+
+```{r}
+library(tidyverse)
+# read_csv is a function inside readr package of tidyverse
+df_iris <- read_csv("inputs/iris_data.csv")
+
+```
+
+We can also write a `csv` file using the same approach but with the `write_csv()` function from the same `readr` package.
+
+```{r}
+library(tidyverse)
+# write_csv is a function inside readr package of tidyverse
+write_csv(x = df_iris, file = "outputs/iris_exported_data.csv")
+
+```
+
+# Manipulating data
+
+## select
+
+We use the `select()` function from the `dplyr` package to subset columns. That is to choose/remove columns of interest from the data frame and work only with the desired columns.
+
+With `iris` example we are going to select columns of interest by
+
+```{r}
+library(tidyverse)
+
+df_iris <- read_csv("inputs/iris_data.csv")
+
+select(.data = df_iris, Species, Petal.Length)
+select(.data = df_iris, c("Species", "Petal.Length"))
+
+# another way. Using a pattern
+select(.data = df_iris, starts_with("Sepal."))
+
+select(.data = df_iris, ends_with(".Width"))
+
+```
+
+## filter
+
+We use the `filter()` function from the `dplyr` package to subset rows of interest. This can be based on entries in one column or more columns.
+
+```{r}
+library(tidyverse)
+
+df_iris <- read_csv("inputs/iris_data.csv")
+
+# considering one specific entry
+filter(.data = df_iris, Species %in% c("versicolor"))
+# considering two specific entry
+filter(.data = df_iris, Species %in% c("versicolor", "virginica"))
+# considering key word
+filter(.data = df_iris, str_detect(string = Species, pattern = "versi"))
+
+# considering more than one column
+filter(.data = df_iris, Sepal.Length > 5, str_detect(string = Species, pattern = "versi"))
+
+```
+    
+## mutate
+
+We can add columns to the data frame using the `mutate()` function from `dplyr`package.
+This adds the new columns at the end of the data frame.
+
+```{r}
+library(tidyverse)
+
+df_iris <- read_csv("inputs/iris_data.csv")
+
+mutate(.data = df_iris, sepal_length_category = ifelse(Sepal.Length > 6, "greater_than_6", "less_than_6"))
+
+mutate(.data = df_iris, sepal_length_category = case_when(Sepal.Length < 5 ~ "cat_less_than_5",
+                                                          Sepal.Length < 7 ~ "cat_5_6",
+                                                          Sepal.Length >= 7 ~ "cat_7+"))
+```
+
+## rename
+
+We can use the `rename()` function to rename column names. We use the format `new_name = old_name`
+
+```{r}
+library(tidyverse)
+
+df_iris <- read_csv("inputs/iris_data.csv")
+
+rename(.data = df_iris, sepal_length = Sepal.Length)
+
+```
+
+Use the `rename_with()` function to rename multiple columns at once following a certain pattern. We specify a function to do the renaming.
+
+```{r}
+# convert all columns to upper case
+rename_with(.data = df_iris, .fn = toupper)
+# convert columns that start with "Petal" to lower case
+rename_with(.data = df_iris, .fn = tolower, .cols = starts_with("Petal"))
+```
+
+## summarise
+
+Use the `summarise()` function to collapse the data frame into fewer rows based on the summary you are creating. If no groups are present in the data frame, the resulting data frame will be one row with the summary.
+
+```{r}
+library(tidyverse)
+
+df_iris <- read_csv("inputs/iris_data.csv")
+
+summarise(.data = df_iris, 
+          mean_sepal_length = mean(Sepal.Length),
+          mean_sepal_width = mean(Sepal.Width)
+          )
+
+# summarise based on grouping
+df_iris_grp <- group_by(.data = df_iris, Species)
+
+summarise(.data = df_iris_grp, 
+          mean_sepal_length = mean(Sepal.Length),
+          mean_sepal_width = mean(Sepal.Width)
+          )
+
+```
+
+## Pipes
+
+Pipes help us to pipe/chain operations together. This way we could combine renaming columns, filtering data and summarizing together. R comes with the `|>` operator starting from R version 4.1.0. Before, there was the `%>%` operator from `magrittr` package of `tidyverse`.
+
+When using the pipes, the resulting data frame from the an operation is the input data frame for the next operation. 
+
+```{r}
+library(tidyverse)
+
+df_iris <- read_csv("inputs/iris_data.csv")
+
+df_iris |> 
+  filter(Species %in% c("versicolor", "virginica")) |> 
+  mutate(sepal_length_category = case_when(Sepal.Length < 5 ~ "cat_less_than_5",
+                                           Sepal.Length < 7 ~ "cat_5_6",
+                                           Sepal.Length >= 7 ~ "cat_7+")) |> 
+  rename_with(.fn = tolower, .cols = starts_with("Petal"))
+
+# summarise
+# group numbers
+df_iris |> 
+  group_by(Species) |> 
+  summarise(count = n())
+# mean
+df_iris |> 
+  group_by(Species) |> 
+  summarise(mean_sepal_length = mean(Sepal.Length),
+            mean_sepal_width = mean(Sepal.Width)
+  )
+```
+
+# Practice 2
+
+In the second practice, we are going to focus on using `dplyr` and `tidyr` to clean data and make it tidy. We shall use the `**Getting and Cleaning Data**` swirl course for this.
+
+After course installation, you can run `swirl()` and select the course you will have installed.
+
+```{r}
+library("swirl")
+
+install_course("Getting and Cleaning Data")
+
+swirl()
+
+```
+Happy R coding days.
