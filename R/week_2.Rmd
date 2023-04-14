@@ -19,7 +19,7 @@ knitr::opts_chunk$set(eval = FALSE, echo = TRUE, warning = F, message = F, resul
 In order to manipulate data, we need to create, read/import data into the R environment using appropriate functions.
 We can use functions provided in the base system where applicable or functions in other containers (packages) specialized for specific file types. 
 
-## Extending R base functionality with packages
+## Extending R base functionality
 
 ### What are packages
 R comes with functionality in the base system. This functionality is what you get when you download and install R.
