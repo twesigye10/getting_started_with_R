@@ -562,23 +562,31 @@ supporteR::create_project_sub_folders()
 # 6 Reading and writing files
 
 We are going to use `iris` data that is included the `datasets` package.
-This data has been exported into a `csv` for illustration purposes. We
-are now going to read in this data stored in the `inputs` folder of the
-project.
+
+We shall export this data into a `csv` for illustration purposes.
+
+We can write a `csv` file using the the `write_csv()` function from the
+same `readr` package. After exporting the data into the outputs folder,
+copy it over into the inputs folder. This has been done to indicate that
+we can always place the data we want to read/import into the `inputs`
+folder and what ever we want to export into the `outputs` folder.
 
 ``` r
 library(tidyverse)
-# read_csv is a function inside readr package of tidyverse
-df_iris <- read_csv("inputs/iris_data.csv")
+
+# write_csv is a function inside readr package of tidyverse
+
+write_csv(datasets::iris, file = "outputs/iris_data.csv")
 ```
 
-We can also write a `csv` file using the same approach but with the
-`write_csv()` function from the same `readr` package.
+We are now going to read in this data stored in the `inputs` folder of
+the project.
 
 ``` r
 library(tidyverse)
-# write_csv is a function inside readr package of tidyverse
-write_csv(x = df_iris, file = "outputs/iris_exported_data.csv")
+
+# read_csv is a function inside readr package of tidyverse
+df_iris <- read_csv("inputs/iris_data.csv")
 ```
 
 # 7 Manipulating data
