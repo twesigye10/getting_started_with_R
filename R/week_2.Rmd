@@ -168,9 +168,30 @@ rename_with(.data = df_iris, .fn = toupper)
 rename_with(.data = df_iris, .fn = tolower, .cols = starts_with("Petal"))
 ```
 
-
-
 ### summarise
+
+Use the `summarise()` function to collapse the data frame into fewer rows based on the summary you are creating. If no groups are present in the data frame, the resulting data frame will be one row with the summary.
+
+```{r}
+library(tidyverse)
+
+df_iris <- read_csv("inputs/iris_data.csv")
+
+summarise(.data = df_iris, 
+          mean_sepal_length = mean(Sepal.Length),
+          mean_sepal_width = mean(Sepal.Width)
+          )
+
+# summarise based on grouping
+df_iris_grp <- group_by(.data = df_iris, Species)
+
+summarise(.data = df_iris_grp, 
+          mean_sepal_length = mean(Sepal.Length),
+          mean_sepal_width = mean(Sepal.Width)
+          )
+
+```
+
 
 ### group_by
 
