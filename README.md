@@ -551,7 +551,7 @@ Before we start reading and writing files, let us add more sub folders
 to our project.
 
 We can use `supporteR` to easily create sub folders in our project using
-the `**create_project_sub_folders()**` function. This will help us to
+the **`create_project_sub_folders()`** function. This will help us to
 keep the folder names uniform as we walk the journey together. You can
 write the following code in the console and hit enter.
 
@@ -739,7 +739,7 @@ df_iris |>
 
 In the second practice, we are going to focus on using `dplyr` and
 `tidyr` to clean data and make it tidy. We shall use the
-`**Getting and Cleaning Data**` swirl course for this.
+**`Getting and Cleaning Data`** swirl course for this.
 
 After course installation, you can run `swirl()` and select the course
 you will have installed.
