@@ -21,11 +21,11 @@ We can use functions provided in the base system where applicable or functions i
 
 ## Extending R base functionality
 
-### What are packages
+## What are packages
 R comes with functionality in the base system. This functionality is what you get when you download and install R.
 This can be extended using containers (packages) that have other functionality or different implementation. These packages contain functions to perform specific tasks.
 
-### Package installation
+## Package installation
 
 For packages on The Comprehensive R Archive Network (CRAN), you can install them using the **install.packages()** function, specifying the name of the function in quotes. This can be done in the console pane since we do not need to save this in a script.
 
@@ -47,7 +47,7 @@ devtools::install_github("twesigye10/supporteR")
 
 ```
 
-### Package loading
+## Package loading
 
 We can load packages using the **library()** function. 
 
@@ -65,7 +65,7 @@ We can use `supporteR` to easily create sub folders in our project using the  `*
 supporteR::create_project_sub_folders()
 ```
 
-## Reading and writing files
+# Reading and writing files
 
 We are going to use `iris` data that is included the `datasets` package. This data has been exported into a `csv` for illustration purposes. We are now going to read in this data stored in the `inputs` folder of the project.
 
@@ -85,9 +85,9 @@ write_csv(x = df_iris, file = "outputs/iris_exported_data.csv")
 
 ```
 
-## Manipulating data
+# Manipulating data
 
-### select
+## select
 
 We use the `select()` function from the `dplyr` package to subset columns. That is to choose/remove columns of interest from the data frame and work only with the desired columns.
 
@@ -108,7 +108,7 @@ select(.data = df_iris, ends_with(".Width"))
 
 ```
 
-### filter
+## filter
 
 We use the `filter()` function from the `dplyr` package to subset rows of interest. This can be based on entries in one column or more columns.
 
@@ -129,7 +129,7 @@ filter(.data = df_iris, Sepal.Length > 5, str_detect(string = Species, pattern =
 
 ```
     
-### mutate
+## mutate
 
 We can add columns to the data frame using the `mutate()` function from `dplyr`package.
 This adds the new columns at the end of the data frame.
@@ -146,7 +146,7 @@ mutate(.data = df_iris, sepal_length_category = case_when(Sepal.Length < 5 ~ "ca
                                                           Sepal.Length >= 7 ~ "cat_7+"))
 ```
 
-### rename
+## rename
 
 We can use the `rename()` function to rename column names. We use the format `new_name = old_name`
 
@@ -168,7 +168,7 @@ rename_with(.data = df_iris, .fn = toupper)
 rename_with(.data = df_iris, .fn = tolower, .cols = starts_with("Petal"))
 ```
 
-### summarise
+## summarise
 
 Use the `summarise()` function to collapse the data frame into fewer rows based on the summary you are creating. If no groups are present in the data frame, the resulting data frame will be one row with the summary.
 
