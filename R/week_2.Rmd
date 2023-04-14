@@ -211,6 +211,11 @@ df_iris |>
   rename_with(.fn = tolower, .cols = starts_with("Petal"))
 
 # summarise
+# group numbers
+df_iris |> 
+  group_by(Species) |> 
+  summarise(count = n())
+# mean
 df_iris |> 
   group_by(Species) |> 
   summarise(mean_sepal_length = mean(Sepal.Length),
