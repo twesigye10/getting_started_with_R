@@ -14,4 +14,34 @@ output:
 knitr::opts_chunk$set(eval = FALSE, echo = TRUE, warning = F, message = F, results = "hide")
 ```
 
+# Creating Graphs using ggplot2
 
+We can create graphs in R using different packages. For the purpose of our learning, we shall use **[ggplot2](https://ggplot2.tidyverse.org/reference/)** from tidyverse. 
+
+From the reference, you can click on the icons of desired graphs under the `Geoms` sub heading to find more about the graph and how to create it.
+
+## Bar graph
+
+We use the `geom_bar` function to create the bar graph.
+
+```{r}
+library(tidyverse)
+
+df_iris |> 
+  ggplot(aes(Species)) +
+  geom_bar()
+
+df_iris |> 
+  ggplot() +
+  geom_bar(aes(y = Species))
+
+```
+
+
+histogram
+
+scatter plot
+
+line graph
+
+box plot
