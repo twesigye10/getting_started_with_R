@@ -223,3 +223,18 @@ df_iris |>
   )
 ```
 
+# Practice 2
+
+In the second practice, we are going to focus on using `dplyr` and `tidyr` to clean data and make it tidy. We shall use the `**Getting and Cleaning Data**` swirl course for this.
+
+After course installation, you can run `swirl()` and select the course you will have installed.
+
+```{r}
+library("swirl")
+
+install_course("Getting and Cleaning Data")
+
+swirl()
+
+```
+Happy R coding days.
