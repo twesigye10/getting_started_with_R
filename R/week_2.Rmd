@@ -131,11 +131,27 @@ filter(.data = df_iris, Sepal.Length > 5, str_detect(string = Species, pattern =
     
 ### mutate
 
+We can add columns to the data frame using the `mutate()` function from `dplyr`package.
+This adds the new columns at the end of the data frame.
+
+```{r}
+library(tidyverse)
+
+df_iris <- read_csv("inputs/iris_data.csv")
+
+mutate(.data = df_iris, sepal_length_category = ifelse(Sepal.Length > 6, "greater_than_6", "less_than_6"))
+
+mutate(.data = df_iris, sepal_length_category = case_when(Sepal.Length < 5 ~ "cat_less_than_5",
+                                                          Sepal.Length < 7 ~ "cat_5_6",
+                                                          Sepal.Length >= 7 ~ "cat_7+"))
+```
+
 ### rename
 
 ### summarise
 
+### group_by
 
 ## Pipes
 
-combine reading data and adding columns
+combine steps with pipes
