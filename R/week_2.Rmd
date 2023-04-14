@@ -148,6 +148,28 @@ mutate(.data = df_iris, sepal_length_category = case_when(Sepal.Length < 5 ~ "ca
 
 ### rename
 
+We can use the `rename()` function to rename column names. We use the format `new_name = old_name`
+
+```{r}
+library(tidyverse)
+
+df_iris <- read_csv("inputs/iris_data.csv")
+
+rename(.data = df_iris, sepal_length = Sepal.Length)
+
+```
+
+Use the `rename_with()` function to rename multiple columns at once following a certain pattern. We specify a function to do the renaming.
+
+```{r}
+# convert all columns to upper case
+rename_with(.data = df_iris, .fn = toupper)
+# convert columns that start with "Petal" to lower case
+rename_with(.data = df_iris, .fn = tolower, .cols = starts_with("Petal"))
+```
+
+
+
 ### summarise
 
 ### group_by
