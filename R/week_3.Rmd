@@ -46,7 +46,7 @@ ggplot(data = df_iris, aes(y = Species)) + # x or y column provided
   geom_bar(fill = "blue") + # uses stat_count() by default
   theme_bw()
 
-# color by category
+# geom_bar color by category
 ggplot(data = df_iris, aes(x = Species)) + # x or y column provided
   geom_bar(aes(fill = sepal_length_category)) + # uses stat_count() by default
   theme_bw()
@@ -54,6 +54,11 @@ ggplot(data = df_iris, aes(x = Species)) + # x or y column provided
 # basic geom_col
 ggplot(data = df_iris, aes(x = Sepal.Length, y = Species)) + # both x and y provided
   geom_col(fill = "blue") +  # uses stat_identity() by default
+  theme_bw()
+
+# geom_col color by category
+ggplot(data = df_iris, aes(x = Sepal.Length, y = Species)) + # both x and y provided
+  geom_col(aes(fill = sepal_length_category)) +  # uses stat_identity() by default
   theme_bw()
 
 # summarizing data and plotting
@@ -80,7 +85,7 @@ ggplot(data = df_mean_sep_len, aes(x = `Mean Length`, y = Species)) +
 
 ## scatter plot
 
-The scatter plot helps us to analyse the relationship between two observations
+The scatter plot helps us to analyse the relationship between observations. It can be handy during Exploratory Data Analysis (EDA) to explore the data.
 
 ```{r}
 
@@ -88,30 +93,42 @@ library(tidyverse)
 
 df_iris <- read_csv("inputs/iris_data.csv")
 
-# Basic
+# Basic scatter
 ggplot(data = df_iris, aes(x = Sepal.Length, y = Sepal.Width)) +
     geom_point() +
     labs(title = "Plot of Sepal measurements")
 
-# Basic
+# scatter with color categories
 ggplot(data = df_iris, aes(x = Sepal.Length, y = Sepal.Width, colour = Species)) +
     geom_point() +
     labs(title = "Plot of Sepal measurements")
 ```
 
 
-box plot
-Checking distribution of the data
+## Boxplot
+
+The Boxplot can help us to check the distribution of the data
 
 ```{r}
 library(tidyverse)
 
 df_iris <- read_csv("inputs/iris_data.csv")
 
-ggplot(data = df_iris, aes(x = Species, y = Sepal.Length, colour = Species)) +
+# basic Boxplot
+ggplot(data = df_iris, aes(x = Species, y = Sepal.Length)) +
     geom_boxplot()
 
+# Boxplot with jitter
 ggplot(data = df_iris, aes(x = Species, y = Sepal.Width, colour = Species)) +
-    geom_boxplot()
+    geom_boxplot() +
+  geom_jitter()
+```
+
+## Export plots
+
+We can use ggsave to export graphs to use in presentations and reports. It uses the defaults of the last plot displayed to export your plot.
+
+```{r}
+ggsave("outputs/plot.png", scale = 2)
 ```
 
