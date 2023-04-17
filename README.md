@@ -48,6 +48,8 @@
   - <a href="#74-rename" id="toc-74-rename">7.4 rename</a>
   - <a href="#75-summarise" id="toc-75-summarise">7.5 summarise</a>
   - <a href="#76-pipes" id="toc-76-pipes">7.6 Pipes</a>
+  - <a href="#77-export-results" id="toc-77-export-results">7.7 Export
+    results</a>
 - <a href="#8-practice-2" id="toc-8-practice-2">8 Practice 2</a>
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -733,6 +735,24 @@ df_iris |>
   summarise(mean_sepal_length = mean(Sepal.Length),
             mean_sepal_width = mean(Sepal.Width)
   )
+```
+
+## 7.7 Export results
+
+We can export results the same way we exported the iris dataset. We can
+create a variable and use it to export or we can still use pipes.
+
+``` r
+
+df_iris <- read_csv("inputs/iris_data.csv")
+
+df_sep_measurements_mean <- df_iris |> 
+  group_by(Species) |> 
+  summarise(mean_sepal_length = mean(Sepal.Length),
+            mean_sepal_width = mean(Sepal.Width)
+  )
+
+write_csv(df_sep_measurements_mean, "outputs/sep_measurements_mean.csv")
 ```
 
 # 8 Practice 2

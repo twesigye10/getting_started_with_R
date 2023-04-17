@@ -651,7 +651,27 @@ df_iris |>
   summarise(mean_sepal_length = mean(Sepal.Length),
             mean_sepal_width = mean(Sepal.Width)
   )
+
 ```
+
+## Export results
+
+We can export results the same way we exported the iris dataset. We can create a variable and use it to export or we can still use pipes.
+
+```{r}
+
+df_iris <- read_csv("inputs/iris_data.csv")
+
+df_sep_measurements_mean <- df_iris |> 
+  group_by(Species) |> 
+  summarise(mean_sepal_length = mean(Sepal.Length),
+            mean_sepal_width = mean(Sepal.Width)
+  )
+
+write_csv(df_sep_measurements_mean, "outputs/sep_measurements_mean.csv")
+
+```
+
 
 # Practice 2
 
