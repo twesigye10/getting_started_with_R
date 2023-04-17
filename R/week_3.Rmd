@@ -83,7 +83,7 @@ ggplot(data = df_mean_sep_len, aes(x = `Mean Length`, y = Species)) +
 
 ```
 
-## scatter plot
+## Scatter plot
 
 The scatter plot helps us to analyse the relationship between observations. It can be handy during Exploratory Data Analysis (EDA) to explore the data.
 
