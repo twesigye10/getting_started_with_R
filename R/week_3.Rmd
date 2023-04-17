@@ -25,6 +25,7 @@ There is also another resource of **[R Graph Gallery](https://r-graph-gallery.co
 ggplot graphs are built step by step, incrementing each step with a `+` sign at the end of a step.
 
 ## Basic steps for creating graphs
+
 - Attach data frame to the ggplot using the data argument
 - Specify the mappings/aesthetics (aes). Columns and other properties to visualize
 - Specify the type of plot/graph by adding the geo_*() functions.
