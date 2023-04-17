@@ -31,26 +31,32 @@ ggplot graphs are built step by step, incrementing each step with a `+` sign at 
 
 ## Bar graph
 
-We use the `geom_bar` function to create the bar graph.
+We use the `geom_bar()` or `geom_col()` functions to create the bar graphs. `geom_bar()` uses `stat_count()` by default and makes the height of the bar proportional to the number of cases in each group. `geom_col()` uses `stat_identity()` and the heights of the bars represent values in the data.
 
 ```{r}
 library(tidyverse)
 
 df_iris <- read_csv("inputs/iris_data.csv")
 
+# basic geom_bar
+ggplot(data = df_iris, aes(y = Species)) + # x or y column provided
+  geom_bar(fill = "blue") + # uses stat_count() by default
+  theme_bw()
+
+# basic geom_col
+ggplot(data = df_iris, aes(x = Sepal.Length, y = Species)) + # both x and y provided
+  geom_col(fill = "blue") +  # uses stat_identity() by default
+  theme_bw()
+
+# summarizing data and plotting
 df_mean_sep_len <- df_iris |> 
   select(Sepal.Length, Species) |> 
   group_by(Species) |> 
   summarise(`Mean Length` = mean(Sepal.Length))
 
-# basic graph
+# customizing the graph
 ggplot(data = df_mean_sep_len, aes(x = `Mean Length`, y = Species)) +
-  geom_bar(stat="identity", fill = "blue", show.legend = FALSE) +
-  theme_bw()
-
-# customizing
-ggplot(data = df_mean_sep_len, aes(x = `Mean Length`, y = Species)) +
-  geom_bar(stat="identity", fill = "blue", show.legend = FALSE) +
+  geom_col(fill = "blue") +
   theme_bw() +
   theme(axis.ticks = element_blank(),
         axis.text.x = element_text(face = "bold", size=12),
@@ -61,7 +67,6 @@ ggplot(data = df_mean_sep_len, aes(x = `Mean Length`, y = Species)) +
         panel.border = element_blank(),
         axis.title = element_text(size=12)) +
   ylab(label = "")  
-
 
 ```
 
