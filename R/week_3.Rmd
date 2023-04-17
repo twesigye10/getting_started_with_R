@@ -16,9 +16,18 @@ knitr::opts_chunk$set(eval = FALSE, echo = TRUE, warning = F, message = F, resul
 
 # Creating Graphs using ggplot2
 
-We can create graphs in R using different packages. For the purpose of our learning, we shall use **[ggplot2](https://ggplot2.tidyverse.org/reference/)** from tidyverse. 
+We can create graphs in R using different packages. For the purpose of our learning, we shall use **[ggplot2](https://ggplot2.tidyverse.org/reference/)** from tidyverse. This package helps us to quickly create beautiful graphs using data in the data frame and we can easily customize these graphs according to our preference.
 
 From the reference, you can click on the icons of desired graphs under the `Geoms` sub heading to find more about the graph and how to create it.
+
+There is also another resource of **[R Graph Gallery](https://r-graph-gallery.com/ggplot2-package.html)** on ggplot2 where you can access different graphs and explore how to create and customize them.
+
+ggplot graphs are built step by step, incrementing each step with a `+` sign at the end of a step.
+
+## Basic steps for creating graphs
+- Attach data frame to the ggplot using the data argument
+- Specify the mappings/aesthetics (aes). Columns and other properties to visualize
+- Specify the type of plot/graph by adding the geo_*() functions.
 
 ## Bar graph
 
@@ -27,21 +36,69 @@ We use the `geom_bar` function to create the bar graph.
 ```{r}
 library(tidyverse)
 
-df_iris |> 
-  ggplot(aes(Species)) +
-  geom_bar()
+df_iris <- read_csv("inputs/iris_data.csv")
 
-df_iris |> 
-  ggplot() +
-  geom_bar(aes(y = Species))
+df_mean_sep_len <- df_iris |> 
+  select(Sepal.Length, Species) |> 
+  group_by(Species) |> 
+  summarise(`Mean Length` = mean(Sepal.Length))
+
+# basic graph
+ggplot(data = df_mean_sep_len, aes(x = `Mean Length`, y = Species)) +
+  geom_bar(stat="identity", fill = "blue", show.legend = FALSE) +
+  theme_bw()
+
+# customizing
+ggplot(data = df_mean_sep_len, aes(x = `Mean Length`, y = Species)) +
+  geom_bar(stat="identity", fill = "blue", show.legend = FALSE) +
+  theme_bw() +
+  theme(axis.ticks = element_blank(),
+        axis.text.x = element_text(face = "bold", size=12),
+        axis.text.y = element_text(face = "bold", size=12),
+        panel.grid.major.x = element_blank(),
+        panel.grid.minor.x = element_blank(),
+        panel.grid.minor.y = element_blank(),
+        panel.border = element_blank(),
+        axis.title = element_text(size=12)) +
+  ylab(label = "")  
+
 
 ```
 
+## scatter plot
 
-histogram
+The scatter plot helps us to analyse the relationship between two observations
 
-scatter plot
+```{r}
 
-line graph
+library(tidyverse)
+
+df_iris <- read_csv("inputs/iris_data.csv")
+
+# Basic
+ggplot(data = df_iris, aes(x = Sepal.Length, y = Sepal.Width)) +
+    geom_point() +
+    labs(title = "Plot of Sepal measurements")
+
+# Basic
+ggplot(data = df_iris, aes(x = Sepal.Length, y = Sepal.Width, colour = Species)) +
+    geom_point() +
+    labs(title = "Plot of Sepal measurements")
+```
+
 
 box plot
+Checking distribution of the data
+
+```{r}
+library(tidyverse)
+
+df_iris <- read_csv("inputs/iris_data.csv")
+
+ggplot(data = df_iris, aes(x = Species, y = Sepal.Length, colour = Species)) +
+    geom_boxplot()
+
+ggplot(data = df_iris, aes(x = Species, y = Sepal.Width, colour = Species)) +
+    geom_boxplot()
+```
+
