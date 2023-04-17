@@ -36,11 +36,18 @@ We use the `geom_bar()` or `geom_col()` functions to create the bar graphs. `geo
 ```{r}
 library(tidyverse)
 
-df_iris <- read_csv("inputs/iris_data.csv")
+df_iris <- read_csv("inputs/iris_data.csv") |> 
+  mutate(sepal_length_category = case_when(Sepal.Length < 5 ~ "cat_less_than_5",
+                                                          Sepal.Length < 7 ~ "cat_5_6",
+                                                          Sepal.Length >= 7 ~ "cat_7+"))
 
 # basic geom_bar
 ggplot(data = df_iris, aes(y = Species)) + # x or y column provided
   geom_bar(fill = "blue") + # uses stat_count() by default
+  theme_bw()
+
+ggplot(data = df_iris, aes(x = Species)) + # x or y column provided
+  geom_bar(aes(fill = sepal_length_category)) + # uses stat_count() by default
   theme_bw()
 
 # basic geom_col
