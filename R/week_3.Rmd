@@ -46,6 +46,7 @@ ggplot(data = df_iris, aes(y = Species)) + # x or y column provided
   geom_bar(fill = "blue") + # uses stat_count() by default
   theme_bw()
 
+# color by category
 ggplot(data = df_iris, aes(x = Species)) + # x or y column provided
   geom_bar(aes(fill = sepal_length_category)) + # uses stat_count() by default
   theme_bw()
