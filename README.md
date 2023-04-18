@@ -51,6 +51,17 @@
   - <a href="#77-export-results" id="toc-77-export-results">7.7 Export
     results</a>
 - <a href="#8-practice-2" id="toc-8-practice-2">8 Practice 2</a>
+- <a href="#9-creating-graphs-using-ggplot2"
+  id="toc-9-creating-graphs-using-ggplot2">9 Creating Graphs using
+  ggplot2</a>
+  - <a href="#91-basic-steps-for-creating-graphs"
+    id="toc-91-basic-steps-for-creating-graphs">9.1 Basic steps for creating
+    graphs</a>
+  - <a href="#92-bar-graph" id="toc-92-bar-graph">9.2 Bar graph</a>
+  - <a href="#93-scatter-plot" id="toc-93-scatter-plot">9.3 Scatter plot</a>
+  - <a href="#94-boxplot" id="toc-94-boxplot">9.4 Boxplot</a>
+  - <a href="#95-export-plots" id="toc-95-export-plots">9.5 Export plots</a>
+- <a href="#10-exercise" id="toc-10-exercise">10 Exercise</a>
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <!-- badges: start -->
@@ -773,3 +784,164 @@ swirl()
 ```
 
 Happy R coding days.
+
+# 9 Creating Graphs using ggplot2
+
+We can create graphs in R using different packages. For the purpose of
+our learning, we shall use
+**[ggplot2](https://ggplot2.tidyverse.org/reference/)** from tidyverse.
+This package helps us to quickly create beautiful graphs using data in
+the data frame and we can easily customize these graphs according to our
+preference.
+
+From the reference, you can click on the icons of desired graphs under
+the `Geoms` sub heading to find more about the graph and how to create
+it.
+
+There is also another resource of **[R Graph
+Gallery](https://r-graph-gallery.com/ggplot2-package.html)** on ggplot2
+where you can access different graphs and explore how to create and
+customize them.
+
+ggplot graphs are built step by step, incrementing each step at the end
+with a `+` sign.
+
+## 9.1 Basic steps for creating graphs
+
+- Attach data frame to the ggplot using the `data` argument
+- Specify the mappings/aesthetics (`aes`). Columns and other properties
+  to visualize
+- Specify the type of plot/graph by adding the `geom_*()` functions.
+
+## 9.2 Bar graph
+
+We use the `geom_bar()` or `geom_col()` functions to create the bar
+graphs. `geom_bar()` uses `stat_count()` by default and makes the height
+of the bar proportional to the number of cases in each group.
+`geom_col()` uses `stat_identity()` and the heights of the bars
+represent values in the data.
+
+``` r
+library(tidyverse)
+
+df_iris <- read_csv("inputs/iris_data.csv") |> 
+  mutate(sepal_length_category = case_when(Sepal.Length < 5 ~ "cat_less_than_5",
+                                                          Sepal.Length < 7 ~ "cat_5_6",
+                                                          Sepal.Length >= 7 ~ "cat_7+"))
+
+# basic geom_bar
+ggplot(data = df_iris, aes(y = Species)) + # x or y column provided
+  geom_bar(fill = "blue") + # uses stat_count() by default
+  theme_bw()
+
+# geom_bar color by category
+ggplot(data = df_iris, aes(x = Species)) + # x or y column provided
+  geom_bar(aes(fill = sepal_length_category)) + # uses stat_count() by default
+  theme_bw()
+
+# basic geom_col
+ggplot(data = df_iris, aes(x = Sepal.Length, y = Species)) + # both x and y provided
+  geom_col(fill = "blue") +  # uses stat_identity() by default
+  theme_bw()
+
+# geom_col color by category
+ggplot(data = df_iris, aes(x = Sepal.Length, y = Species)) + # both x and y provided
+  geom_col(aes(fill = sepal_length_category)) +  # uses stat_identity() by default
+  theme_bw()
+
+# summarizing data and plotting
+df_mean_sep_len <- df_iris |> 
+  select(Sepal.Length, Species) |> 
+  group_by(Species) |> 
+  summarise(`Mean Length` = mean(Sepal.Length))
+
+# customizing the graph
+ggplot(data = df_mean_sep_len, aes(x = `Mean Length`, y = Species)) +
+  geom_col(fill = "blue") +
+  theme_bw() +
+  theme(axis.ticks = element_blank(),
+        axis.text.x = element_text(face = "bold", size=12),
+        axis.text.y = element_text(face = "bold", size=12),
+        panel.grid.major.x = element_blank(),
+        panel.grid.minor.x = element_blank(),
+        panel.grid.minor.y = element_blank(),
+        panel.border = element_blank(),
+        axis.title = element_text(size=12)) +
+  ylab(label = "")  
+```
+
+## 9.3 Scatter plot
+
+The scatter plot helps us to analyse the relationship between
+observations. It can be handy during Exploratory Data Analysis (EDA) to
+explore the data.
+
+``` r
+
+library(tidyverse)
+
+df_iris <- read_csv("inputs/iris_data.csv")
+
+# Basic scatter
+ggplot(data = df_iris, aes(x = Sepal.Length, y = Sepal.Width)) +
+    geom_point() +
+    labs(title = "Plot of Sepal measurements")
+
+# scatter with color categories
+ggplot(data = df_iris, aes(x = Sepal.Length, y = Sepal.Width, colour = Species)) +
+    geom_point() +
+    labs(title = "Plot of Sepal measurements")
+```
+
+## 9.4 Boxplot
+
+The Boxplot can help us to check the distribution of the data
+
+``` r
+library(tidyverse)
+
+df_iris <- read_csv("inputs/iris_data.csv")
+
+# basic Boxplot
+ggplot(data = df_iris, aes(x = Species, y = Sepal.Length)) +
+    geom_boxplot()
+
+# Boxplot with jitter
+ggplot(data = df_iris, aes(x = Species, y = Sepal.Width, colour = Species)) +
+    geom_boxplot() +
+  geom_jitter()
+```
+
+## 9.5 Export plots
+
+We can use ggsave to export graphs to use in presentations and reports.
+It uses the defaults of the last plot displayed to export your plot.
+
+``` r
+ggsave("outputs/plot.png", scale = 2)
+```
+
+# 10 Exercise
+
+> We are going to use the iris dataset to test our skills in working
+> with data.
+
+> 1)  Import the iris dataset into a variable named `df_iris`. For the
+>     following steps, create a new variable `df_iris_data` assigning to
+>     it the data you imported and use the pipe operator to add steps
+>     `b` to `e`.
+> 2)  Subset the dataset to keep with columns that start with `Petal`
+>     and `Species`
+> 3)  Rename columns that start with `Petal` by removing `Petal.` from
+>     the columns. Maintaining only `Length` and `Width`
+> 4)  Subset dataset to keep only rows where `Length` is greater than
+>     `1.2`
+> 5)  Create a new column of `Length_Category` with ranges `< 3`
+>     “less_than_3”, `< 5` “btn_3\_and_5”, `> 5` “greater_than_5”
+> 6)  Create a bar graph indicating the `Species` and colour the graph
+>     based on `Length_Category`.
+> 7)  Calculate the mean `Length` for each `Species` and store the
+>     result in the `df_mean_length` variable.  
+> 8)  Create a bar graph for the result from the previous step.
+> 9)  Calculate the proportions based on `Species` and
+>     `Length_Category`. Export this result into a csv file.
