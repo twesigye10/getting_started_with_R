@@ -814,7 +814,7 @@ ggsave("outputs/plot.png", scale = 2)
 > We are going to use the iris dataset to test our skills in working with data.
 
 >a) Import the iris dataset into a variable named `df_iris`. 
-For the following steps, create a new variable `df_iris_data` assigning to it the data you imported and use the pipe operator to add steps `b` to `e`.
+For the following steps, create a new variable `df_iris_data` assigning to it the data you imported and use the pipe operator to add steps `2` to `5`.
 b) Subset the dataset to keep with columns that start with `Petal` and `Species`
 c) Rename columns that start with `Petal` by removing `Petal.` from the columns. Maintaining only `Length` and `Width`
 d) Subset dataset to keep only rows where `Length` is greater than `1.2`

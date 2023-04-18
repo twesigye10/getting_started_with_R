@@ -929,7 +929,7 @@ ggsave("outputs/plot.png", scale = 2)
 > 1)  Import the iris dataset into a variable named `df_iris`. For the
 >     following steps, create a new variable `df_iris_data` assigning to
 >     it the data you imported and use the pipe operator to add steps
->     `b` to `e`.
+>     `2` to `5`.
 > 2)  Subset the dataset to keep with columns that start with `Petal`
 >     and `Species`
 > 3)  Rename columns that start with `Petal` by removing `Petal.` from
