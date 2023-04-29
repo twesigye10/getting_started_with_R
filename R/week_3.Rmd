@@ -27,13 +27,22 @@ The reports can be generated in different formats like HTML files, PDF files, Wo
 You can create `R Markdown` files the same way we create `R` files. From the `File` menu, click `New File` then `R Markdown…`
 
 
+![](../img/rmarkdown_new_file.png)
+
+
 From the pop up pane, choose the format of the report to generate give the Title of the document and click OK.
+
+
+![](../img/rmarkdown_doc_type.png)
+
 
 It will create a file with sample content containing basic parts of the report.
 
 Save the file into an appropriate folder and start modifying or clear the sample content and add your own content.
 
 ## Basic parts of the file and syntax
+
+![](../img/rmarkdown_parts.png)
 
 ## YAML header
 
@@ -49,11 +58,40 @@ In the body, we put content that will be seen in the report. The content may inc
 
 ## Headings
 
-We use the `#` symbol to define the heading level
+We use the **`#`** symbol to define the heading level
+
+```{r}
+# First-level header
+
+## Second-level header
+
+### Third-level header
+
+```
+
 
 ## Body text
 
 We write free text outside of chunks and this text will be generated in the report. We can also style this text by giving it colour, making it bold, italic.
+
+>Normal text
+
+>**Bold text** or __Another bold text__
+
+>*Italic text* or _Another italic text_
+
+><span style="color:red"> This is coloured text </span>
+
+```{r}
+Normal text
+
+**Bold text** or __Another bold text__
+
+*Italic text* or _Another italic text_
+
+<span style="color:red"> This is coloured text </span>
+  
+```
 
 ## Links
 
@@ -70,10 +108,13 @@ Inside a code chunk, we can put R code that will be run and results added to the
 - https://monashbioinformaticsplatform.github.io/2017-11-16-open-science-training/topics/rmarkdown.html
 
 
+## Useful keyboard shortcuts on windows
 
+- Ctrl + Alt + I. Used to create a new code chunk
 
 ```{r}
 
 ```
 
-code shortcuts
+- Ctrl + Shift + K. Used to knit the file
+
