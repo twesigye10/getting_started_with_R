@@ -16,9 +16,9 @@ knitr::opts_chunk$set(eval = FALSE, echo = TRUE, warning = F, message = F, resul
 
 # Getting started with R Markdown
 
-R Markdown helps us to generate reports. The reports could be based on changing data like during data collection where you have to communicate progress to different teams. It could also be a dynamic report generated regularly after a given period of time like a weekly or monthly report. when we connect these reports with data, it becomes easy for us to run the code and generate these reports.
+R Markdown helps us to generate reports. The reports could be based on changing data like during data collection where you have to communicate daily data collection progress to different teams. It could also be a dynamic report generated regularly after a given period of time like weekly or monthly report. when we connect these reports with data, it becomes easy for us to run the code and generate these reports.
 
-These reports can include different elements like text, tables, graphs, maps e.t.c that are based on the data connected to the reports. 
+These reports can include different elements like text, tables, graphs, maps e.t.c that are based on the data that we are reporting on. 
 
 The reports can be generated in different formats like HTML files, PDF files, Word files, Presentation files ...
 
@@ -38,7 +38,7 @@ From the pop up pane, choose the format of the report to generate give the Title
 
 It will create a file with sample content containing basic parts of the report.
 
-Save the file into an appropriate folder and start modifying or clear the sample content and add your own content.
+Save the file into an appropriate folder for our case the `R` folder in our project and start modifying or clear the sample content and add your own content.
 
 ## Basic parts of the file and syntax
 
@@ -99,8 +99,12 @@ We can also add links to reports. Next is the link to our repository.
 
 [Getting started with R](https://github.com/twesigye10/getting_started_with_R)
 
+[Markdown Basics](https://rmarkdown.rstudio.com/authoring_basics.html)
+
 ```{r links}
 [Getting started with R](https://github.com/twesigye10/getting_started_with_R)
+
+[Markdown Basics](https://rmarkdown.rstudio.com/authoring_basics.html)
 ```
 
 
