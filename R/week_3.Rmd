@@ -16,25 +16,52 @@ knitr::opts_chunk$set(eval = FALSE, echo = TRUE, warning = F, message = F, resul
 
 # Getting started with R Markdown
 
-Rmarkdown helps us to generate reports. The reports could be based on changing data like during data collection where you have to communicate progress to different teams. It could also be a dynamic report generated regularly after a given period of time like a weekly or monthly report. when we connect these reports with data, it becomes easy for us to run the code and generate these reports.
+R Markdown helps us to generate reports. The reports could be based on changing data like during data collection where you have to communicate progress to different teams. It could also be a dynamic report generated regularly after a given period of time like a weekly or monthly report. when we connect these reports with data, it becomes easy for us to run the code and generate these reports.
 
 These reports can include different elements like text, tables, graphs, maps e.t.c that are based on the data connected to the reports. 
 
 The reports can be generated in different formats like HTML files, PDF files, Word files, Presentation files ...
 
-## Creating and an Rmarkdown file
+## Creating and an R Markdown file
+
+You can create `R Markdown` files the same way we create `R` files. From the `File` menu, click `New File` then `R Markdown…`
 
 
+From the pop up pane, choose the format of the report to generate give the Title of the document and click OK.
 
-## Basic parts of the file
+It will create a file with sample content containing basic parts of the report.
 
-## Basic syntax
+Save the file into an appropriate folder and start modifying or clear the sample content and add your own content.
 
-headings
-normal text
-- links
-code chunks
-inline code
+## Basic parts of the file and syntax
+
+## YAML header
+
+This part controls the document type to create. In this header, you can specify the type of document, the author, the title and other properties like table of contents for the document if appropriate.
+
+## Global options chuck
+
+This part allows us to specify some options that affect the entire document. This could include code folding, evaluation, display of messages, how to handle results, if to include the chunk. These options can be overridden in the individual chunk options.
+
+## Document body
+
+In the body, we put content that will be seen in the report. The content may include headings, text, graphs, tables, maps, code e.t.c. 
+
+## Headings
+
+We use the `#` symbol to define the heading level
+
+## Body text
+
+We write free text outside of chunks and this text will be generated in the report. We can also style this text by giving it colour, making it bold, italic.
+
+## Links
+
+We can also add links to reports.
+
+## Code chunks
+
+Inside a code chunk, we can put R code that will be run and results added to the report. Code can also be added in text as inline code to return some results from the code.
 
 ## Generate the report
 
