@@ -143,8 +143,23 @@ Note: This is a list
 - Ctrl + Shift + K. Used to knit the file
 ```
 
+## Visualizing tables with DT
 
+You can easily visualize tables with [`DT` package](https://rstudio.github.io/DT/) an interface to the JavaScript library  DataTables. This can be installed using the following code. An example of usage has also been included.
+
+```{r}
+install.packages("DT")
+
+library(DT)
+
+iris |> 
+  datatable()
+
+```
 
 # Exercise 2
 
 Transfer exercise 1 into R Markdown to generate HTML report.
+
+
+
