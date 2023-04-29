@@ -60,7 +60,7 @@ In the body, we put content that will be seen in the report. The content may inc
 
 We use the **`#`** symbol to define the heading level
 
-```{r}
+```{r headings}
 # First-level header
 
 ## Second-level header
@@ -82,7 +82,7 @@ We write free text outside of chunks and this text will be generated in the repo
 
 ><span style="color:red"> This is coloured text </span>
 
-```{r}
+```{r body-text}
 Normal text
 
 **Bold text** or __Another bold text__
@@ -95,26 +95,51 @@ Normal text
 
 ## Links
 
-We can also add links to reports.
+We can also add links to reports. Next is the link to our repository.
+
+[Getting started with R](https://github.com/twesigye10/getting_started_with_R)
+
+```{r links}
+[Getting started with R](https://github.com/twesigye10/getting_started_with_R)
+```
+
 
 ## Code chunks
 
-Inside a code chunk, we can put R code that will be run and results added to the report. Code can also be added in text as inline code to return some results from the code.
+Inside a code chunk, we can put R code that will be run and results added to the report. Code can also be added in text as inline code to return some results from the code. If your results are assigned to a variable, remember to call the variable after evaluation. This way, it will show the output.
+
+```{r iris}
+summary(iris)
+```
+
+Inline code. The number of observations for iris data is: **`r nrow(iris)`**
+
+```{r}
+Inline code. The number of observations for iris data is: **`r nrow(iris)`**
+```
+
 
 ## Generate the report
 
+You generate the report by knitting the document using the knit button on top of the document. Or you can use the keyboard shortcut of **`Ctrl + Shift + K`**.
 
-- https://rmarkdown.rstudio.com/authoring_basics.html
-- https://monashbioinformaticsplatform.github.io/2017-11-16-open-science-training/topics/rmarkdown.html
-
+![](../img/rmarkdown_knit.png)
 
 ## Useful keyboard shortcuts on windows
 
+- **`Ctrl + Alt + I`**. Used to create a new code chunk
+
+- **`Ctrl + Shift + K`**. Used to knit the file
+
+Note: This is a list
+```{r}
 - Ctrl + Alt + I. Used to create a new code chunk
 
-```{r}
-
+- Ctrl + Shift + K. Used to knit the file
 ```
 
-- Ctrl + Shift + K. Used to knit the file
 
+
+# Exercise 2
+
+Transfer exercise 1 into R Markdown to generate HTML report.
