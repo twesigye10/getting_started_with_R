@@ -136,6 +136,7 @@ You generate the report by knitting the document using the knit button on top of
 - **`Ctrl + Shift + K`**. Used to knit the file
 
 Note: This is a list
+
 ```{r}
 - Ctrl + Alt + I. Used to create a new code chunk
 
