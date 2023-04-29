@@ -147,7 +147,8 @@ Note: This is a list
 
 You can easily visualize tables with [`DT` package](https://rstudio.github.io/DT/) an interface to the JavaScript library  DataTables. This can be installed using the following code. An example of usage has also been included.
 
-```{r}
+```{r tables}
+
 install.packages("DT")
 
 library(DT)
@@ -156,6 +157,23 @@ iris |>
   datatable()
 
 ```
+
+## Scatter plot
+
+The scatter plot helps us to analyse the relationship between observations. It can be handy during Exploratory Data Analysis (EDA) to explore the data.
+
+```{r graphs}
+
+library(tidyverse)
+
+df_iris <- read_csv("inputs/iris_data.csv")
+
+# scatter with color categories
+ggplot(data = df_iris, aes(x = Sepal.Length, y = Sepal.Width, colour = Species)) +
+    geom_point() +
+    labs(title = "Plot of Sepal measurements")
+```
+
 
 # Exercise 2
 
