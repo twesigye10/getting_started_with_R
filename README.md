@@ -62,6 +62,35 @@
   - <a href="#94-boxplot" id="toc-94-boxplot">9.4 Boxplot</a>
   - <a href="#95-export-plots" id="toc-95-export-plots">9.5 Export plots</a>
 - <a href="#10-exercise" id="toc-10-exercise">10 Exercise</a>
+- <a href="#11-getting-started-with-r-markdown"
+  id="toc-11-getting-started-with-r-markdown">11 Getting started with R
+  Markdown</a>
+  - <a href="#111-creating-and-an-r-markdown-file"
+    id="toc-111-creating-and-an-r-markdown-file">11.1 Creating and an R
+    Markdown file</a>
+  - <a href="#112-basic-parts-of-the-file-and-syntax"
+    id="toc-112-basic-parts-of-the-file-and-syntax">11.2 Basic parts of the
+    file and syntax</a>
+  - <a href="#113-yaml-header" id="toc-113-yaml-header">11.3 YAML header</a>
+  - <a href="#114-global-options-chuck"
+    id="toc-114-global-options-chuck">11.4 Global options chuck</a>
+  - <a href="#115-document-body" id="toc-115-document-body">11.5 Document
+    body</a>
+  - <a href="#116-headings" id="toc-116-headings">11.6 Headings</a>
+  - <a href="#117-body-text" id="toc-117-body-text">11.7 Body text</a>
+  - <a href="#118-links" id="toc-118-links">11.8 Links</a>
+  - <a href="#119-code-chunks" id="toc-119-code-chunks">11.9 Code chunks</a>
+  - <a href="#1110-generate-the-report"
+    id="toc-1110-generate-the-report">11.10 Generate the report</a>
+  - <a href="#1111-useful-keyboard-shortcuts-on-windows"
+    id="toc-1111-useful-keyboard-shortcuts-on-windows">11.11 Useful keyboard
+    shortcuts on windows</a>
+  - <a href="#1112-visualizing-tables-with-dt"
+    id="toc-1112-visualizing-tables-with-dt">11.12 Visualizing tables with
+    DT</a>
+  - <a href="#1113-scatter-plot" id="toc-1113-scatter-plot">11.13 Scatter
+    plot</a>
+- <a href="#12-exercise-2" id="toc-12-exercise-2">12 Exercise 2</a>
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <!-- badges: start -->
@@ -945,3 +974,190 @@ ggsave("outputs/plot.png", scale = 2)
 > 8)  Create a bar graph for the result from the previous step.
 > 9)  Calculate the proportions based on `Species` and
 >     `Length_Category`. Export this result into a csv file.
+
+# 11 Getting started with R Markdown
+
+R Markdown helps us to generate reports. The reports could be based on
+changing data like during data collection where you have to communicate
+daily data collection progress to different teams. It could also be a
+dynamic report generated regularly after a given period of time like
+weekly or monthly report. when we connect these reports with data, it
+becomes easy for us to run the code and generate these reports.
+
+These reports can include different elements like text, tables, graphs,
+maps e.t.c that are based on the data that we are reporting on.
+
+The reports can be generated in different formats like HTML files, PDF
+files, Word files, Presentation files …
+
+## 11.1 Creating and an R Markdown file
+
+You can create `R Markdown` files the same way we create `R` files. From
+the `File` menu, click `New File` then `R Markdown…`
+
+![](img/rmarkdown_new_file.png)
+
+From the pop up pane, choose the format of the report to generate give
+the Title of the document and click OK.
+
+![](img/rmarkdown_doc_type.png)
+
+It will create a file with sample content containing basic parts of the
+report.
+
+Save the file into an appropriate folder for our case the `R` folder in
+our project and start modifying or clear the sample content and add your
+own content.
+
+## 11.2 Basic parts of the file and syntax
+
+![](img/rmarkdown_parts.png)
+
+## 11.3 YAML header
+
+This part controls the document type to create. In this header, you can
+specify the type of document, the author, the title and other properties
+like table of contents for the document if appropriate.
+
+## 11.4 Global options chuck
+
+This part allows us to specify some options that affect the entire
+document. This could include code folding, evaluation, display of
+messages, how to handle results, if to include the chunk. These options
+can be overridden in the individual chunk options.
+
+## 11.5 Document body
+
+In the body, we put content that will be seen in the report. The content
+may include headings, text, graphs, tables, maps, code e.t.c.
+
+## 11.6 Headings
+
+We use the **`#`** symbol to define the heading level
+
+``` r
+# First-level header
+
+## Second-level header
+
+### Third-level header
+```
+
+## 11.7 Body text
+
+We write free text outside of chunks and this text will be generated in
+the report. We can also style this text by giving it colour, making it
+bold, italic.
+
+> Normal text
+
+> **Bold text** or **Another bold text**
+
+> *Italic text* or *Another italic text*
+
+> <span style="color:red">This is coloured text</span>
+
+``` r
+Normal text
+
+**Bold text** or __Another bold text__
+
+*Italic text* or _Another italic text_
+
+<span style="color:red"> This is coloured text </span>
+  
+```
+
+## 11.8 Links
+
+We can also add links to reports. Next is the link to our repository.
+
+[Getting started with
+R](https://github.com/twesigye10/getting_started_with_R)
+
+[Markdown Basics](https://rmarkdown.rstudio.com/authoring_basics.html)
+
+``` r
+[Getting started with R](https://github.com/twesigye10/getting_started_with_R)
+
+[Markdown Basics](https://rmarkdown.rstudio.com/authoring_basics.html)
+```
+
+## 11.9 Code chunks
+
+Inside a code chunk, we can put R code that will be run and results
+added to the report. Code can also be added in text as inline code to
+return some results from the code. If your results are assigned to a
+variable, remember to call the variable after evaluation. This way, it
+will show the output.
+
+``` r
+summary(iris)
+```
+
+Inline code. The number of observations for iris data is: **150**
+
+``` r
+Inline code. The number of observations for iris data is: **`r nrow(iris)`**
+```
+
+## 11.10 Generate the report
+
+You generate the report by knitting the document using the knit button
+on top of the document. Or you can use the keyboard shortcut of
+**`Ctrl + Shift + K`**.
+
+![](img/rmarkdown_knit.png)
+
+## 11.11 Useful keyboard shortcuts on windows
+
+- **`Ctrl + Alt + I`**. Used to create a new code chunk
+
+- **`Ctrl + Shift + K`**. Used to knit the file
+
+Note: This is a list
+
+``` r
+- Ctrl + Alt + I. Used to create a new code chunk
+
+- Ctrl + Shift + K. Used to knit the file
+```
+
+## 11.12 Visualizing tables with DT
+
+You can easily visualize tables with [`DT`
+package](https://rstudio.github.io/DT/) an interface to the JavaScript
+library DataTables. This can be installed using the following code. An
+example of usage has also been included.
+
+``` r
+
+install.packages("DT")
+
+library(DT)
+
+iris |> 
+  datatable()
+```
+
+## 11.13 Scatter plot
+
+The scatter plot helps us to analyse the relationship between
+observations. It can be handy during Exploratory Data Analysis (EDA) to
+explore the data.
+
+``` r
+
+library(tidyverse)
+
+df_iris <- read_csv("inputs/iris_data.csv")
+
+# scatter with color categories
+ggplot(data = df_iris, aes(x = Sepal.Length, y = Sepal.Width, colour = Species)) +
+    geom_point() +
+    labs(title = "Plot of Sepal measurements")
+```
+
+# 12 Exercise 2
+
+Transfer exercise 1 into R Markdown to generate HTML report.
