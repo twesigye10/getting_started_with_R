@@ -14,7 +14,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Version control
+# Version control with Git, GitHub, Sourcetree and RStudio
 
 Version control involves managing the versions of our code. We can track changes 
 we made to the code and in this way we could even reset the code to a desired backward version of the code. 
@@ -24,7 +24,14 @@ We shall focus on setting up environment for version control using Git, Github a
 
 ## Git, GitHub
 
+`Git` is is a free and open source distributed version control mechanism that we can use to manage our code. `GitHub` on the other hand is a an internet hosting service for projects using git as their version control mechanism. By default the projects hosted are public and can be accessed by anyone. However there are also private projects.
+
+### Installing Git and GitHub
+
 
 
 ## sourcetree
+
+
+## Connecting sourcetree and Github
 
