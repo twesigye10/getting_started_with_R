@@ -14,6 +14,8 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Version control
+
 Version control involves managing the versions of our code. We can track changes 
 we made to the code and in this way we could even reset the code to a desired backward version of the code. 
 
