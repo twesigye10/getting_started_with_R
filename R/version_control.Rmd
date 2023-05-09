@@ -1,0 +1,28 @@
+---
+title: "Version control"
+author: "REACH"
+date: "May 2023"
+output:
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Version control involves managing the versions of our code. We can track changes 
+we made to the code and in this way we could even reset the code to a desired backward version of the code. 
+
+
+We shall focus on setting up environment for version control using Git, Github and Sourcetree.
+
+## Git, GitHub
+
+
+
+## sourcetree
+
