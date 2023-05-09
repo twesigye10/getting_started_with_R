@@ -28,6 +28,10 @@ We shall focus on setting up environment for version control using Git, Github a
 
 ### Installing Git and GitHub
 
+We can [download Git](https://git-scm.com/downloads) and install on our computers. During the installation, it will install also with it `Git Bash` and `Git GUI` (Graphical User Interface).
+These two interfaces can be used to manage the code with the `Git Bash` using command line interface while the GUI using a user interface to manage the code. For the purpose of this guidance, we shall be using `sourcetree` that is an easy to use tool.
+
+
 
 
 ## sourcetree
