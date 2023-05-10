@@ -37,6 +37,11 @@ We can use [GitHub](https://github.com/) to store and manage our code. To use it
 
 ## sourcetree
 
+`sourcetree` is a free Git client from [Atlassian](https://www.atlassian.com/) that simplifies working with Git repositories. You can easily manage and visualize your code.
 
-## Connecting sourcetree and Github
+You can [download sourcetree](https://www.atlassian.com/software/sourcetree) from the software page of `Atlassian` and install it on your computer.
+
+## Configure sourcetree and Github
+
+After the installation of `Git`, `Sourcetree` and creating a `GitHub` account, we can now configure our tools to easily manage the versions of our code.
 
