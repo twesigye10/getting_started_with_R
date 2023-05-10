@@ -405,7 +405,7 @@ nrow(my_dataframe)
 ncol(my_dataframe)
 ```
 
-# Practice 1
+## Practice 1
 
 We are going to practice with swirl. **[swirl](https://swirlstats.com/)** is an R package that consists of a collection of interactive courses for learning R.
 
@@ -673,7 +673,7 @@ write_csv(df_sep_measurements_mean, "outputs/sep_measurements_mean.csv")
 ```
 
 
-# Practice 2
+## Practice 2
 
 In the second practice, we are going to focus on using `dplyr` and `tidyr` to clean data and make it tidy. We shall use the **`Getting and Cleaning Data`** swirl course for this.
 
@@ -809,7 +809,7 @@ We can use ggsave to export graphs to use in presentations and reports. It uses 
 ggsave("outputs/plot.png", scale = 2)
 ```
 
-# Exercise
+## Exercise 1
 
 > We are going to use the iris dataset to test our skills in working with data.
 
@@ -987,6 +987,92 @@ ggplot(data = df_iris, aes(x = Sepal.Length, y = Sepal.Width, colour = Species))
 ```
 
 
-# Exercise 2
+## Exercise 2
 
 Transfer exercise 1 into R Markdown to generate HTML report.
+
+
+# Version control with Git, GitHub, Sourcetree and RStudio
+
+Version control involves managing the versions of our code as individual developers or while collaborating as teams. We can track changes 
+we made to the code and in this way we could even reset the code to a desired backward version of the code. 
+
+There are many ways of using `R Studio`, `Git` and `GitHub`. But for the purpose of this guide, we shall focus on setting up environment for version control using `Git`, `Github` and `Sourcetree`.
+
+## Git, GitHub
+
+`Git` is is a free and open source distributed version control mechanism that we can use to manage our code. `GitHub` on the other hand is a an internet hosting service for projects using git as their version control mechanism. By default the projects hosted are public and can be accessed by anyone. However there are also private projects.
+
+## Installing Git
+
+We can [download Git](https://git-scm.com/downloads) and install on our computers. During the installation, it will install also with it `Git Bash` and `Git GUI` (Graphical User Interface).
+These two interfaces can be used to manage the code with the `Git Bash` using command line interface while the GUI using a user interface to manage the code. For the purpose of this guidance, we shall be using `Sourcetree` that is an easy to use tool without using the command line.
+
+## Accessing GitHub
+
+We can use [GitHub](https://github.com/) to store and manage our code. To use it for this purpose, we need to create an account if we do not have one already. You can sign up from the [GitHub sign up](https://github.com/signup) page.
+
+
+## Sourcetree
+
+`Sourcetree` is a free Git client from [Atlassian](https://www.atlassian.com/) that simplifies working with Git repositories. You can easily manage and visualize your code.
+
+You can [download Sourcetree](https://www.atlassian.com/software/sourcetree) from the software page of `Atlassian` and install it on your computer.
+
+## Configure Sourcetree and Github
+
+After the installation of `Git`, `Sourcetree` and creating a `GitHub` account, we can now configure our tools to easily manage the versions of our code.
+
+## Enable version control in R Studio
+
+To enable version control in `R Studio`, open `R Studio` then click on `Tools` menu select `Global Options`, then `Git/SVN` and activate the `Enable Version control interface for R Studio projects`. The `Git executable` box should now be filled with the location of `Git` executable file.
+
+## Add GitHub account to Sourcetree
+
+To connect GitHub account to Sourcetree, under `Remote Repositories` tab in Sourcetree, click on `Add an account…` and edit the information in the `Edit Hosting Account` menu that pops up. 
+
+For `Hosting Service`, choose `GitHub`. 
+
+For `Authentication`, choose `OAuth` and click `Refresh OAuth Token`. This may open a web page for you to sign in to `GitHub`.  
+
+Once signed in, the account connection will display under the `Remote Repositories` tab. If you click on your account and the click on `refresh` button, you will see your repositories on `GitHub`.
+
+## set up GitHub to accept communication with Sourcetree
+
+We also need to configure `GitHub` to accept communication from `Sourcetree.` 
+
+For this we shall [login in to GitHub](https://github.com/login). Then click on your `profile` located in the top right of the page, select `Settings`, then `Developer settings` located in the bottom left of the page and then click on `OAuth Apps`.
+
+On the `OAuth Apps` page, we shall create an `OAuth Application` for Authenticating `Sourcetree` while pushing code. We shall generate a `client secret` that we will be adding to repositories to allow the communication from `Sourcetree`. Copy this `client secret` and keep it safely.
+
+This is a one time process that you do not repeat.
+
+
+## Create repository on GitHub. 
+
+Try to avoid spaces in repository names, instead use underscores between words. An example "first_repository", "cbi_data_mgt"
+
+## Create a new R Studio project.
+
+using the option for **`Version Control`** to check out a project from a version control repository, then choose `Git`. Specify the link to the `GitHub` repository created and create the project.
+
+## Add the R Studio project to Sourcetree
+
+Open Sourcetree and click on a `plus sign` on the tabs bar of Sourcetree to add a new tab. While `Local` is selected, click on the `Add` tool to the create `R Studio` project to Sourcetree. 
+
+## Connect `R Studio Project` and `GitHub repository`
+
+Click on `Settings` tool once the `R Studio` project is open in `Sourcetree`,  click on the `origin` url and click on edit. We shall add the `client secret` to the url. Add your `personal token` + `@` before `github.com` of the url. 
+`https://{personal-access-token}@github.com/{my_repository}`.
+
+**Note**: `The contents inside {}` change accordingly.
+
+You are now ready to version management on the repository and push your changes to `GitHub`.
+
+## Main Git operations with version control with Sourcetree
+
+- commit. You can do this iside R Studio. Esure to add a commit message to reflect what has changed.
+- push. You can do this inside R studio or Sourcetree
+- pull. You can do this inside R studio or Sourcetree
+- branch. You can do this Sourcetree
+- merge branches. You can do this Sourcetree

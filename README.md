@@ -20,77 +20,113 @@
   - <a href="#32-vectors" id="toc-32-vectors">3.2 Vectors</a>
   - <a href="#33-lists" id="toc-33-lists">3.3 lists</a>
   - <a href="#34-data-frames" id="toc-34-data-frames">3.4 Data Frames</a>
-- <a href="#4-practice-1" id="toc-4-practice-1">4 Practice 1</a>
-  - <a href="#41-install-swirl" id="toc-41-install-swirl">4.1 Install
+  - <a href="#35-practice-1" id="toc-35-practice-1">3.5 Practice 1</a>
+  - <a href="#36-install-swirl" id="toc-36-install-swirl">3.6 Install
     swirl</a>
-  - <a href="#42-start-swirl" id="toc-42-start-swirl">4.2 Start swirl</a>
-  - <a href="#43-install-and-runcourse"
-    id="toc-43-install-and-runcourse">4.3 Install and runcourse</a>
-- <a href="#5-reading-and-manipulating-data"
-  id="toc-5-reading-and-manipulating-data">5 Reading and manipulating
+  - <a href="#37-start-swirl" id="toc-37-start-swirl">3.7 Start swirl</a>
+  - <a href="#38-install-and-runcourse"
+    id="toc-38-install-and-runcourse">3.8 Install and runcourse</a>
+- <a href="#4-reading-and-manipulating-data"
+  id="toc-4-reading-and-manipulating-data">4 Reading and manipulating
   data</a>
-  - <a href="#51-extending-r-base-functionality"
-    id="toc-51-extending-r-base-functionality">5.1 Extending R base
+  - <a href="#41-extending-r-base-functionality"
+    id="toc-41-extending-r-base-functionality">4.1 Extending R base
     functionality</a>
-  - <a href="#52-what-are-packages" id="toc-52-what-are-packages">5.2 What
+  - <a href="#42-what-are-packages" id="toc-42-what-are-packages">4.2 What
     are packages</a>
-  - <a href="#53-package-installation" id="toc-53-package-installation">5.3
+  - <a href="#43-package-installation" id="toc-43-package-installation">4.3
     Package installation</a>
-  - <a href="#54-package-loading" id="toc-54-package-loading">5.4 Package
+  - <a href="#44-package-loading" id="toc-44-package-loading">4.4 Package
     loading</a>
-- <a href="#6-reading-and-writing-files"
-  id="toc-6-reading-and-writing-files">6 Reading and writing files</a>
-- <a href="#7-manipulating-data" id="toc-7-manipulating-data">7
+- <a href="#5-reading-and-writing-files"
+  id="toc-5-reading-and-writing-files">5 Reading and writing files</a>
+- <a href="#6-manipulating-data" id="toc-6-manipulating-data">6
   Manipulating data</a>
-  - <a href="#71-select" id="toc-71-select">7.1 select</a>
-  - <a href="#72-filter" id="toc-72-filter">7.2 filter</a>
-  - <a href="#73-mutate" id="toc-73-mutate">7.3 mutate</a>
-  - <a href="#74-rename" id="toc-74-rename">7.4 rename</a>
-  - <a href="#75-summarise" id="toc-75-summarise">7.5 summarise</a>
-  - <a href="#76-pipes" id="toc-76-pipes">7.6 Pipes</a>
-  - <a href="#77-export-results" id="toc-77-export-results">7.7 Export
+  - <a href="#61-select" id="toc-61-select">6.1 select</a>
+  - <a href="#62-filter" id="toc-62-filter">6.2 filter</a>
+  - <a href="#63-mutate" id="toc-63-mutate">6.3 mutate</a>
+  - <a href="#64-rename" id="toc-64-rename">6.4 rename</a>
+  - <a href="#65-summarise" id="toc-65-summarise">6.5 summarise</a>
+  - <a href="#66-pipes" id="toc-66-pipes">6.6 Pipes</a>
+  - <a href="#67-export-results" id="toc-67-export-results">6.7 Export
     results</a>
-- <a href="#8-practice-2" id="toc-8-practice-2">8 Practice 2</a>
-- <a href="#9-creating-graphs-using-ggplot2"
-  id="toc-9-creating-graphs-using-ggplot2">9 Creating Graphs using
+  - <a href="#68-practice-2" id="toc-68-practice-2">6.8 Practice 2</a>
+- <a href="#7-creating-graphs-using-ggplot2"
+  id="toc-7-creating-graphs-using-ggplot2">7 Creating Graphs using
   ggplot2</a>
-  - <a href="#91-basic-steps-for-creating-graphs"
-    id="toc-91-basic-steps-for-creating-graphs">9.1 Basic steps for creating
+  - <a href="#71-basic-steps-for-creating-graphs"
+    id="toc-71-basic-steps-for-creating-graphs">7.1 Basic steps for creating
     graphs</a>
-  - <a href="#92-bar-graph" id="toc-92-bar-graph">9.2 Bar graph</a>
-  - <a href="#93-scatter-plot" id="toc-93-scatter-plot">9.3 Scatter plot</a>
-  - <a href="#94-boxplot" id="toc-94-boxplot">9.4 Boxplot</a>
-  - <a href="#95-export-plots" id="toc-95-export-plots">9.5 Export plots</a>
-- <a href="#10-exercise" id="toc-10-exercise">10 Exercise</a>
-- <a href="#11-getting-started-with-r-markdown"
-  id="toc-11-getting-started-with-r-markdown">11 Getting started with R
+  - <a href="#72-bar-graph" id="toc-72-bar-graph">7.2 Bar graph</a>
+  - <a href="#73-scatter-plot" id="toc-73-scatter-plot">7.3 Scatter plot</a>
+  - <a href="#74-boxplot" id="toc-74-boxplot">7.4 Boxplot</a>
+  - <a href="#75-export-plots" id="toc-75-export-plots">7.5 Export plots</a>
+  - <a href="#76-exercise-1" id="toc-76-exercise-1">7.6 Exercise 1</a>
+- <a href="#8-getting-started-with-r-markdown"
+  id="toc-8-getting-started-with-r-markdown">8 Getting started with R
   Markdown</a>
-  - <a href="#111-creating-and-an-r-markdown-file"
-    id="toc-111-creating-and-an-r-markdown-file">11.1 Creating and an R
+  - <a href="#81-creating-and-an-r-markdown-file"
+    id="toc-81-creating-and-an-r-markdown-file">8.1 Creating and an R
     Markdown file</a>
-  - <a href="#112-basic-parts-of-the-file-and-syntax"
-    id="toc-112-basic-parts-of-the-file-and-syntax">11.2 Basic parts of the
+  - <a href="#82-basic-parts-of-the-file-and-syntax"
+    id="toc-82-basic-parts-of-the-file-and-syntax">8.2 Basic parts of the
     file and syntax</a>
-  - <a href="#113-yaml-header" id="toc-113-yaml-header">11.3 YAML header</a>
-  - <a href="#114-global-options-chuck"
-    id="toc-114-global-options-chuck">11.4 Global options chuck</a>
-  - <a href="#115-document-body" id="toc-115-document-body">11.5 Document
+  - <a href="#83-yaml-header" id="toc-83-yaml-header">8.3 YAML header</a>
+  - <a href="#84-global-options-chuck" id="toc-84-global-options-chuck">8.4
+    Global options chuck</a>
+  - <a href="#85-document-body" id="toc-85-document-body">8.5 Document
     body</a>
-  - <a href="#116-headings" id="toc-116-headings">11.6 Headings</a>
-  - <a href="#117-body-text" id="toc-117-body-text">11.7 Body text</a>
-  - <a href="#118-links" id="toc-118-links">11.8 Links</a>
-  - <a href="#119-code-chunks" id="toc-119-code-chunks">11.9 Code chunks</a>
-  - <a href="#1110-generate-the-report"
-    id="toc-1110-generate-the-report">11.10 Generate the report</a>
-  - <a href="#1111-useful-keyboard-shortcuts-on-windows"
-    id="toc-1111-useful-keyboard-shortcuts-on-windows">11.11 Useful keyboard
+  - <a href="#86-headings" id="toc-86-headings">8.6 Headings</a>
+  - <a href="#87-body-text" id="toc-87-body-text">8.7 Body text</a>
+  - <a href="#88-links" id="toc-88-links">8.8 Links</a>
+  - <a href="#89-code-chunks" id="toc-89-code-chunks">8.9 Code chunks</a>
+  - <a href="#810-generate-the-report" id="toc-810-generate-the-report">8.10
+    Generate the report</a>
+  - <a href="#811-useful-keyboard-shortcuts-on-windows"
+    id="toc-811-useful-keyboard-shortcuts-on-windows">8.11 Useful keyboard
     shortcuts on windows</a>
-  - <a href="#1112-visualizing-tables-with-dt"
-    id="toc-1112-visualizing-tables-with-dt">11.12 Visualizing tables with
+  - <a href="#812-visualizing-tables-with-dt"
+    id="toc-812-visualizing-tables-with-dt">8.12 Visualizing tables with
     DT</a>
-  - <a href="#1113-scatter-plot" id="toc-1113-scatter-plot">11.13 Scatter
+  - <a href="#813-scatter-plot" id="toc-813-scatter-plot">8.13 Scatter
     plot</a>
-- <a href="#12-exercise-2" id="toc-12-exercise-2">12 Exercise 2</a>
+  - <a href="#814-exercise-2" id="toc-814-exercise-2">8.14 Exercise 2</a>
+- <a href="#9-version-control-with-git-github-sourcetree-and-rstudio"
+  id="toc-9-version-control-with-git-github-sourcetree-and-rstudio">9
+  Version control with Git, GitHub, Sourcetree and RStudio</a>
+  - <a href="#91-git-github" id="toc-91-git-github">9.1 Git, GitHub</a>
+  - <a href="#92-installing-git" id="toc-92-installing-git">9.2 Installing
+    Git</a>
+  - <a href="#93-accessing-github" id="toc-93-accessing-github">9.3
+    Accessing GitHub</a>
+  - <a href="#94-sourcetree" id="toc-94-sourcetree">9.4 Sourcetree</a>
+  - <a href="#95-configure-sourcetree-and-github"
+    id="toc-95-configure-sourcetree-and-github">9.5 Configure Sourcetree and
+    Github</a>
+  - <a href="#96-enable-version-control-in-r-studio"
+    id="toc-96-enable-version-control-in-r-studio">9.6 Enable version
+    control in R Studio</a>
+  - <a href="#97-add-github-account-to-sourcetree"
+    id="toc-97-add-github-account-to-sourcetree">9.7 Add GitHub account to
+    Sourcetree</a>
+  - <a href="#98-set-up-github-to-accept-communication-with-sourcetree"
+    id="toc-98-set-up-github-to-accept-communication-with-sourcetree">9.8
+    set up GitHub to accept communication with Sourcetree</a>
+  - <a href="#99-create-repository-on-github"
+    id="toc-99-create-repository-on-github">9.9 Create repository on
+    GitHub.</a>
+  - <a href="#910-create-a-new-r-studio-project"
+    id="toc-910-create-a-new-r-studio-project">9.10 Create a new R Studio
+    project.</a>
+  - <a href="#911-add-the-r-studio-project-to-sourcetree"
+    id="toc-911-add-the-r-studio-project-to-sourcetree">9.11 Add the R
+    Studio project to Sourcetree</a>
+  - <a href="#912-connect-r-studio-project-and-github-repository"
+    id="toc-912-connect-r-studio-project-and-github-repository">9.12 Connect
+    <code>R Studio Project</code> and <code>GitHub repository</code></a>
+  - <a href="#913-main-git-operations-with-version-control-with-sourcetree"
+    id="toc-913-main-git-operations-with-version-control-with-sourcetree">9.13
+    Main Git operations with version control with Sourcetree</a>
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <!-- badges: start -->
@@ -498,13 +534,13 @@ nrow(my_dataframe)
 ncol(my_dataframe)
 ```
 
-# 4 Practice 1
+## 3.5 Practice 1
 
 We are going to practice with swirl.
 **[swirl](https://swirlstats.com/)** is an R package that consists of a
 collection of interactive courses for learning R.
 
-## 4.1 Install swirl
+## 3.6 Install swirl
 
 Use the following code to install the swirl package.
 
@@ -512,7 +548,7 @@ Use the following code to install the swirl package.
 install.packages("swirl")
 ```
 
-## 4.2 Start swirl
+## 3.7 Start swirl
 
 load the **`swirl`** package using the **`libray()`** function to load
 the functions in the package.
@@ -521,7 +557,7 @@ the functions in the package.
 library("swirl")
 ```
 
-## 4.3 Install and runcourse
+## 3.8 Install and runcourse
 
 Use the **`install_course()`** function to install the
 **`R_Programming_E`** course we shall be following for our first
@@ -534,16 +570,16 @@ swirl()
 
 Enjoy coding.
 
-# 5 Reading and manipulating data
+# 4 Reading and manipulating data
 
 In order to manipulate data, we need to create, read/import data into
 the R environment using appropriate functions. We can use functions
 provided in the base system where applicable or functions in other
 containers (packages) specialized for specific file types.
 
-## 5.1 Extending R base functionality
+## 4.1 Extending R base functionality
 
-## 5.2 What are packages
+## 4.2 What are packages
 
 R comes with functionality in the base system. This functionality is
 what you get when you download and install R. This can be extended using
@@ -551,7 +587,7 @@ containers (packages) that have other functionality or different
 implementation. These packages contain functions to perform specific
 tasks.
 
-## 5.3 Package installation
+## 4.3 Package installation
 
 For packages on The Comprehensive R Archive Network (CRAN), you can
 install them using the **install.packages()** function, specifying the
@@ -580,7 +616,7 @@ install.packages("devtools")
 devtools::install_github("twesigye10/supporteR")
 ```
 
-## 5.4 Package loading
+## 4.4 Package loading
 
 We can load packages using the **library()** function.
 
@@ -601,7 +637,7 @@ write the following code in the console and hit enter.
 supporteR::create_project_sub_folders()
 ```
 
-# 6 Reading and writing files
+# 5 Reading and writing files
 
 We are going to use `iris` data that is included the `datasets` package.
 
@@ -631,9 +667,9 @@ library(tidyverse)
 df_iris <- read_csv("inputs/iris_data.csv")
 ```
 
-# 7 Manipulating data
+# 6 Manipulating data
 
-## 7.1 select
+## 6.1 select
 
 We use the `select()` function from the `dplyr` package to subset
 columns. That is to choose/remove columns of interest from the data
@@ -655,7 +691,7 @@ select(.data = df_iris, starts_with("Sepal."))
 select(.data = df_iris, ends_with(".Width"))
 ```
 
-## 7.2 filter
+## 6.2 filter
 
 We use the `filter()` function from the `dplyr` package to subset rows
 of interest. This can be based on entries in one column or more columns.
@@ -676,7 +712,7 @@ filter(.data = df_iris, str_detect(string = Species, pattern = "versi"))
 filter(.data = df_iris, Sepal.Length > 5, str_detect(string = Species, pattern = "versi"))
 ```
 
-## 7.3 mutate
+## 6.3 mutate
 
 We can add columns to the data frame using the `mutate()` function from
 `dplyr`package. This adds the new columns at the end of the data frame.
@@ -693,7 +729,7 @@ mutate(.data = df_iris, sepal_length_category = case_when(Sepal.Length < 5 ~ "ca
                                                           Sepal.Length >= 7 ~ "cat_7+"))
 ```
 
-## 7.4 rename
+## 6.4 rename
 
 We can use the `rename()` function to rename column names. We use the
 format `new_name = old_name`
@@ -716,7 +752,7 @@ rename_with(.data = df_iris, .fn = toupper)
 rename_with(.data = df_iris, .fn = tolower, .cols = starts_with("Petal"))
 ```
 
-## 7.5 summarise
+## 6.5 summarise
 
 Use the `summarise()` function to collapse the data frame into fewer
 rows based on the summary you are creating. If no groups are present in
@@ -742,7 +778,7 @@ summarise(.data = df_iris_grp,
           )
 ```
 
-## 7.6 Pipes
+## 6.6 Pipes
 
 Pipes help us to pipe/chain operations together. This way we could
 combine renaming columns, filtering data and summarizing together. R
@@ -777,7 +813,7 @@ df_iris |>
   )
 ```
 
-## 7.7 Export results
+## 6.7 Export results
 
 We can export results the same way we exported the iris dataset. We can
 create a variable and use it to export or we can still use pipes.
@@ -795,7 +831,7 @@ df_sep_measurements_mean <- df_iris |>
 write_csv(df_sep_measurements_mean, "outputs/sep_measurements_mean.csv")
 ```
 
-# 8 Practice 2
+## 6.8 Practice 2
 
 In the second practice, we are going to focus on using `dplyr` and
 `tidyr` to clean data and make it tidy. We shall use the
@@ -814,7 +850,7 @@ swirl()
 
 Happy R coding days.
 
-# 9 Creating Graphs using ggplot2
+# 7 Creating Graphs using ggplot2
 
 We can create graphs in R using different packages. For the purpose of
 our learning, we shall use
@@ -835,14 +871,14 @@ customize them.
 ggplot graphs are built step by step, incrementing each step at the end
 with a `+` sign.
 
-## 9.1 Basic steps for creating graphs
+## 7.1 Basic steps for creating graphs
 
 - Attach data frame to the ggplot using the `data` argument
 - Specify the mappings/aesthetics (`aes`). Columns and other properties
   to visualize
 - Specify the type of plot/graph by adding the `geom_*()` functions.
 
-## 9.2 Bar graph
+## 7.2 Bar graph
 
 We use the `geom_bar()` or `geom_col()` functions to create the bar
 graphs. `geom_bar()` uses `stat_count()` by default and makes the height
@@ -899,7 +935,7 @@ ggplot(data = df_mean_sep_len, aes(x = `Mean Length`, y = Species)) +
   ylab(label = "")  
 ```
 
-## 9.3 Scatter plot
+## 7.3 Scatter plot
 
 The scatter plot helps us to analyse the relationship between
 observations. It can be handy during Exploratory Data Analysis (EDA) to
@@ -922,7 +958,7 @@ ggplot(data = df_iris, aes(x = Sepal.Length, y = Sepal.Width, colour = Species))
     labs(title = "Plot of Sepal measurements")
 ```
 
-## 9.4 Boxplot
+## 7.4 Boxplot
 
 The Boxplot can help us to check the distribution of the data
 
@@ -941,7 +977,7 @@ ggplot(data = df_iris, aes(x = Species, y = Sepal.Width, colour = Species)) +
   geom_jitter()
 ```
 
-## 9.5 Export plots
+## 7.5 Export plots
 
 We can use ggsave to export graphs to use in presentations and reports.
 It uses the defaults of the last plot displayed to export your plot.
@@ -950,7 +986,7 @@ It uses the defaults of the last plot displayed to export your plot.
 ggsave("outputs/plot.png", scale = 2)
 ```
 
-# 10 Exercise
+## 7.6 Exercise 1
 
 > We are going to use the iris dataset to test our skills in working
 > with data.
@@ -975,7 +1011,7 @@ ggsave("outputs/plot.png", scale = 2)
 > 9)  Calculate the proportions based on `Species` and
 >     `Length_Category`. Export this result into a csv file.
 
-# 11 Getting started with R Markdown
+# 8 Getting started with R Markdown
 
 R Markdown helps us to generate reports. The reports could be based on
 changing data like during data collection where you have to communicate
@@ -990,7 +1026,7 @@ maps e.t.c that are based on the data that we are reporting on.
 The reports can be generated in different formats like HTML files, PDF
 files, Word files, Presentation files …
 
-## 11.1 Creating and an R Markdown file
+## 8.1 Creating and an R Markdown file
 
 You can create `R Markdown` files the same way we create `R` files. From
 the `File` menu, click `New File` then `R Markdown…`
@@ -1009,29 +1045,29 @@ Save the file into an appropriate folder for our case the `R` folder in
 our project and start modifying or clear the sample content and add your
 own content.
 
-## 11.2 Basic parts of the file and syntax
+## 8.2 Basic parts of the file and syntax
 
 ![](img/rmarkdown_parts.png)
 
-## 11.3 YAML header
+## 8.3 YAML header
 
 This part controls the document type to create. In this header, you can
 specify the type of document, the author, the title and other properties
 like table of contents for the document if appropriate.
 
-## 11.4 Global options chuck
+## 8.4 Global options chuck
 
 This part allows us to specify some options that affect the entire
 document. This could include code folding, evaluation, display of
 messages, how to handle results, if to include the chunk. These options
 can be overridden in the individual chunk options.
 
-## 11.5 Document body
+## 8.5 Document body
 
 In the body, we put content that will be seen in the report. The content
 may include headings, text, graphs, tables, maps, code e.t.c.
 
-## 11.6 Headings
+## 8.6 Headings
 
 We use the **`#`** symbol to define the heading level
 
@@ -1043,7 +1079,7 @@ We use the **`#`** symbol to define the heading level
 ### Third-level header
 ```
 
-## 11.7 Body text
+## 8.7 Body text
 
 We write free text outside of chunks and this text will be generated in
 the report. We can also style this text by giving it colour, making it
@@ -1068,7 +1104,7 @@ Normal text
   
 ```
 
-## 11.8 Links
+## 8.8 Links
 
 We can also add links to reports. Next is the link to our repository.
 
@@ -1083,7 +1119,7 @@ R](https://github.com/twesigye10/getting_started_with_R)
 [Markdown Basics](https://rmarkdown.rstudio.com/authoring_basics.html)
 ```
 
-## 11.9 Code chunks
+## 8.9 Code chunks
 
 Inside a code chunk, we can put R code that will be run and results
 added to the report. Code can also be added in text as inline code to
@@ -1101,7 +1137,7 @@ Inline code. The number of observations for iris data is: **150**
 Inline code. The number of observations for iris data is: **`r nrow(iris)`**
 ```
 
-## 11.10 Generate the report
+## 8.10 Generate the report
 
 You generate the report by knitting the document using the knit button
 on top of the document. Or you can use the keyboard shortcut of
@@ -1109,7 +1145,7 @@ on top of the document. Or you can use the keyboard shortcut of
 
 ![](img/rmarkdown_knit.png)
 
-## 11.11 Useful keyboard shortcuts on windows
+## 8.11 Useful keyboard shortcuts on windows
 
 - **`Ctrl + Alt + I`**. Used to create a new code chunk
 
@@ -1123,7 +1159,7 @@ Note: This is a list
 - Ctrl + Shift + K. Used to knit the file
 ```
 
-## 11.12 Visualizing tables with DT
+## 8.12 Visualizing tables with DT
 
 You can easily visualize tables with [`DT`
 package](https://rstudio.github.io/DT/) an interface to the JavaScript
@@ -1140,7 +1176,7 @@ iris |>
   datatable()
 ```
 
-## 11.13 Scatter plot
+## 8.13 Scatter plot
 
 The scatter plot helps us to analyse the relationship between
 observations. It can be handy during Exploratory Data Analysis (EDA) to
@@ -1158,6 +1194,138 @@ ggplot(data = df_iris, aes(x = Sepal.Length, y = Sepal.Width, colour = Species))
     labs(title = "Plot of Sepal measurements")
 ```
 
-# 12 Exercise 2
+## 8.14 Exercise 2
 
 Transfer exercise 1 into R Markdown to generate HTML report.
+
+# 9 Version control with Git, GitHub, Sourcetree and RStudio
+
+Version control involves managing the versions of our code as individual
+developers or while collaborating as teams. We can track changes we made
+to the code and in this way we could even reset the code to a desired
+backward version of the code.
+
+There are many ways of using `R Studio`, `Git` and `GitHub`. But for the
+purpose of this guide, we shall focus on setting up environment for
+version control using `Git`, `Github` and `Sourcetree`.
+
+## 9.1 Git, GitHub
+
+`Git` is is a free and open source distributed version control mechanism
+that we can use to manage our code. `GitHub` on the other hand is a an
+internet hosting service for projects using git as their version control
+mechanism. By default the projects hosted are public and can be accessed
+by anyone. However there are also private projects.
+
+## 9.2 Installing Git
+
+We can [download Git](https://git-scm.com/downloads) and install on our
+computers. During the installation, it will install also with it
+`Git Bash` and `Git GUI` (Graphical User Interface). These two
+interfaces can be used to manage the code with the `Git Bash` using
+command line interface while the GUI using a user interface to manage
+the code. For the purpose of this guidance, we shall be using
+`Sourcetree` that is an easy to use tool without using the command line.
+
+## 9.3 Accessing GitHub
+
+We can use [GitHub](https://github.com/) to store and manage our code.
+To use it for this purpose, we need to create an account if we do not
+have one already. You can sign up from the [GitHub sign
+up](https://github.com/signup) page.
+
+## 9.4 Sourcetree
+
+`Sourcetree` is a free Git client from
+[Atlassian](https://www.atlassian.com/) that simplifies working with Git
+repositories. You can easily manage and visualize your code.
+
+You can [download
+Sourcetree](https://www.atlassian.com/software/sourcetree) from the
+software page of `Atlassian` and install it on your computer.
+
+## 9.5 Configure Sourcetree and Github
+
+After the installation of `Git`, `Sourcetree` and creating a `GitHub`
+account, we can now configure our tools to easily manage the versions of
+our code.
+
+## 9.6 Enable version control in R Studio
+
+To enable version control in `R Studio`, open `R Studio` then click on
+`Tools` menu select `Global Options`, then `Git/SVN` and activate the
+`Enable Version control interface for R Studio projects`. The
+`Git executable` box should now be filled with the location of `Git`
+executable file.
+
+## 9.7 Add GitHub account to Sourcetree
+
+To connect GitHub account to Sourcetree, under `Remote Repositories` tab
+in Sourcetree, click on `Add an account…` and edit the information in
+the `Edit Hosting Account` menu that pops up.
+
+For `Hosting Service`, choose `GitHub`.
+
+For `Authentication`, choose `OAuth` and click `Refresh OAuth Token`.
+This may open a web page for you to sign in to `GitHub`.
+
+Once signed in, the account connection will display under the
+`Remote Repositories` tab. If you click on your account and the click on
+`refresh` button, you will see your repositories on `GitHub`.
+
+## 9.8 set up GitHub to accept communication with Sourcetree
+
+We also need to configure `GitHub` to accept communication from
+`Sourcetree.`
+
+For this we shall [login in to GitHub](https://github.com/login). Then
+click on your `profile` located in the top right of the page, select
+`Settings`, then `Developer settings` located in the bottom left of the
+page and then click on `OAuth Apps`.
+
+On the `OAuth Apps` page, we shall create an `OAuth Application` for
+Authenticating `Sourcetree` while pushing code. We shall generate a
+`client secret` that we will be adding to repositories to allow the
+communication from `Sourcetree`. Copy this `client secret` and keep it
+safely.
+
+This is a one time process that you do not repeat.
+
+## 9.9 Create repository on GitHub.
+
+Try to avoid spaces in repository names, instead use underscores between
+words. An example “first_repository”, “cbi_data_mgt”
+
+## 9.10 Create a new R Studio project.
+
+using the option for **`Version Control`** to check out a project from a
+version control repository, then choose `Git`. Specify the link to the
+`GitHub` repository created and create the project.
+
+## 9.11 Add the R Studio project to Sourcetree
+
+Open Sourcetree and click on a `plus sign` on the tabs bar of Sourcetree
+to add a new tab. While `Local` is selected, click on the `Add` tool to
+the create `R Studio` project to Sourcetree.
+
+## 9.12 Connect `R Studio Project` and `GitHub repository`
+
+Click on `Settings` tool once the `R Studio` project is open in
+`Sourcetree`, click on the `origin` url and click on edit. We shall add
+the `client secret` to the url. Add your `personal token` + `@` before
+`github.com` of the url.
+`https://{personal-access-token}@github.com/{my_repository}`.
+
+**Note**: `The contents inside {}` change accordingly.
+
+You are now ready to version management on the repository and push your
+changes to `GitHub`.
+
+## 9.13 Main Git operations with version control with Sourcetree
+
+- commit. You can do this iside R Studio. Esure to add a commit message
+  to reflect what has changed.
+- push. You can do this inside R studio or Sourcetree
+- pull. You can do this inside R studio or Sourcetree
+- branch. You can do this Sourcetree
+- merge branches. You can do this Sourcetree
