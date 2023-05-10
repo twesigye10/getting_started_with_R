@@ -72,18 +72,31 @@ This is a one time process that you do not repeat.
 
 ## R Studio Project and GitHub set up
 
-Create a new R Studio project and enable `Git`
+### Create repository on GitHub. 
 
-Create repository with same name on GitHub
+Try to avoid spaces in repository names, instead use underscores between words. An example "first_repository", "cbi_data_mgt"
 
-Add the R Studio project to Sourcetree
+### Create a new R Studio project.
 
-Connect `R Studio Project` and `GitHub repository`
+using the option for **`Version Control`** to check out a project from a version control repository, then choose `Git`. Specify the link to the `GitHub` repository created and create the project.
+
+### Add the R Studio project to Sourcetree
+
+Open Sourcetree and click on a `plus sign` on the tabs bar of Sourcetree to add a new tab. While `Local` is selected, click on the `Add` tool to the create `R Studio` project to Sourcetree. 
+
+### Connect `R Studio Project` and `GitHub repository`
+
+Click on `Settings` tool once the `R Studio` project is open in `Sourcetree`,  click on the `origin` url and click on edit. We shall add the `client secret` to the url. Add your `personal token` + `@` before `github.com` of the url. 
+`https://{personal-access-token}@github.com/{my_repository}`.
+
+**Note**: `The contents inside {}` change accordingly.
+
+You are now ready to version management on the repository and push your changes to `GitHub`.
 
 ## Main operations/tasks with version control with sourcetree
 
-- commit
-- push
-- pull
-- branch
-- merge branches
+- commit. You can do this iside R Studio
+- push. You can do this inside R studio or Sourcetree
+- pull. You can do this inside R studio or Sourcetree
+- branch. You can do this Sourcetree
+- merge branches. You can do this Sourcetree
