@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Version control with Git, GitHub, Sourcetree and RStudio
 
-Version control involves managing the versions of our code. We can track changes 
+Version control involves managing the versions of our code as individual developers or while collaborating as teams. We can track changes 
 we made to the code and in this way we could even reset the code to a desired backward version of the code. 
 
 There are many ways of using `R Studio`, `Git` and `GitHub`. But for the purpose of this guide, we shall focus on setting up environment for version control using `Git`, `Github` and `Sourcetree`.
@@ -58,3 +58,32 @@ For `Hosting Service`, choose `GitHub`.
 For `Authentication`, choose `OAuth` and click `Refresh OAuth Token`. This may open a web page for you to sign in to `GitHub`.  
 
 Once signed in, the account connection will display under the `Remote Repositories` tab. If you click on your account and the click on `refresh` button, you will see your repositories on `GitHub`.
+
+### set up GitHub to accept communication with Sourcetree
+
+We also need to configure `GitHub` to accept communication from `Sourcetree.` 
+
+For this we shall [login in to GitHub](https://github.com/login). Then click on your `profile` located in the top right of the page, select `Settings`, then `Developer settings` located in the bottom left of the page and then click on `OAuth Apps`.
+
+On the `OAuth Apps` page, we shall create an `OAuth Application` for Authenticating `Sourcetree` while pushing code. We shall generate a `client secret` that we will be adding to repositories to allow the communication from `Sourcetree`. Copy this `client secret` and keep it safely.
+
+This is a one time process that you do not repeat.
+
+
+## R Studio Project and GitHub set up
+
+Create a new R Studio project and enable `Git`
+
+Create repository with same name on GitHub
+
+Add the R Studio project to Sourcetree
+
+Connect `R Studio Project` and `GitHub repository`
+
+## Main operations/tasks with version control with sourcetree
+
+- commit
+- push
+- pull
+- branch
+- merge branches
