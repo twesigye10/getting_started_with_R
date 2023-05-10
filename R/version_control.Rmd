@@ -93,9 +93,9 @@ Click on `Settings` tool once the `R Studio` project is open in `Sourcetree`,  c
 
 You are now ready to version management on the repository and push your changes to `GitHub`.
 
-## Main operations/tasks with version control with sourcetree
+## Main Git operations with version control with Sourcetree
 
-- commit. You can do this iside R Studio
+- commit. You can do this iside R Studio. Esure to add a commit message to reflect what has changed.
 - push. You can do this inside R studio or Sourcetree
 - pull. You can do this inside R studio or Sourcetree
 - branch. You can do this Sourcetree
