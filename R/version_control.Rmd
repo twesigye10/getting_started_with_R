@@ -19,19 +19,20 @@ knitr::opts_chunk$set(echo = TRUE)
 Version control involves managing the versions of our code. We can track changes 
 we made to the code and in this way we could even reset the code to a desired backward version of the code. 
 
-
-We shall focus on setting up environment for version control using Git, Github and Sourcetree.
+There are many ways of using `R Studio`, `Git` and `GitHub`. But for the purpose of this guide, we shall focus on setting up environment for version control using `Git`, `Github` and `Sourcetree`.
 
 ## Git, GitHub
 
 `Git` is is a free and open source distributed version control mechanism that we can use to manage our code. `GitHub` on the other hand is a an internet hosting service for projects using git as their version control mechanism. By default the projects hosted are public and can be accessed by anyone. However there are also private projects.
 
-### Installing Git and GitHub
+### Installing Git
 
 We can [download Git](https://git-scm.com/downloads) and install on our computers. During the installation, it will install also with it `Git Bash` and `Git GUI` (Graphical User Interface).
 These two interfaces can be used to manage the code with the `Git Bash` using command line interface while the GUI using a user interface to manage the code. For the purpose of this guidance, we shall be using `sourcetree` that is an easy to use tool.
 
+## Accessing GitHub
 
+We can use [GitHub](https://github.com/) to store and manage our code. To use it for this purpose, we need to create an account if we do not have one already. You can sign up from the [GitHub sign up](https://github.com/signup) page.
 
 
 ## sourcetree
