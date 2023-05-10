@@ -28,20 +28,33 @@ There are many ways of using `R Studio`, `Git` and `GitHub`. But for the purpose
 ### Installing Git
 
 We can [download Git](https://git-scm.com/downloads) and install on our computers. During the installation, it will install also with it `Git Bash` and `Git GUI` (Graphical User Interface).
-These two interfaces can be used to manage the code with the `Git Bash` using command line interface while the GUI using a user interface to manage the code. For the purpose of this guidance, we shall be using `sourcetree` that is an easy to use tool.
+These two interfaces can be used to manage the code with the `Git Bash` using command line interface while the GUI using a user interface to manage the code. For the purpose of this guidance, we shall be using `Sourcetree` that is an easy to use tool.
 
 ## Accessing GitHub
 
 We can use [GitHub](https://github.com/) to store and manage our code. To use it for this purpose, we need to create an account if we do not have one already. You can sign up from the [GitHub sign up](https://github.com/signup) page.
 
 
-## sourcetree
+## Sourcetree
 
-`sourcetree` is a free Git client from [Atlassian](https://www.atlassian.com/) that simplifies working with Git repositories. You can easily manage and visualize your code.
+`Sourcetree` is a free Git client from [Atlassian](https://www.atlassian.com/) that simplifies working with Git repositories. You can easily manage and visualize your code.
 
-You can [download sourcetree](https://www.atlassian.com/software/sourcetree) from the software page of `Atlassian` and install it on your computer.
+You can [download Sourcetree](https://www.atlassian.com/software/sourcetree) from the software page of `Atlassian` and install it on your computer.
 
-## Configure sourcetree and Github
+## Configure Sourcetree and Github
 
 After the installation of `Git`, `Sourcetree` and creating a `GitHub` account, we can now configure our tools to easily manage the versions of our code.
 
+### Enable version control in R Studio
+
+To enable version control in `R Studio`, open `R Studio` then click on `Tools` menu select `Global Options`, then `Git/SVN` and activate the `Enable Version control interface for R Studio projects`. The `Git executable` box should now be filled with the location of `Git` executable file.
+
+### Add GitHub account to Sourcetree
+
+To connect GitHub account to Sourcetree, under `Remote Repositories` tab in Sourcetree, click on `Add an account…` and edit the information in the `Edit Hosting Account` menu that pops up. 
+
+For `Hosting Service`, choose `GitHub`. 
+
+For `Authentication`, choose `OAuth` and click `Refresh OAuth Token`. This may open a web page for you to sign in to `GitHub`.  
+
+Once signed in, the account connection will display under the `Remote Repositories` tab. If you click on your account and the click on `refresh` button, you will see your repositories on `GitHub`.
