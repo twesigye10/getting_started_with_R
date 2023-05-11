@@ -1281,13 +1281,13 @@ We also need to configure `GitHub` to accept communication from
 For this we shall [login in to GitHub](https://github.com/login). Then
 click on your `profile` located in the top right of the page, select
 `Settings`, then `Developer settings` located in the bottom left of the
-page and then click on `OAuth Apps`.
+page,then locate `Personal access tokens` and click `tokens (classic)`.
 
-On the `OAuth Apps` page, we shall create an `OAuth Application` for
-Authenticating `Sourcetree` while pushing code. We shall generate a
-`client secret` that we will be adding to repositories to allow the
-communication from `Sourcetree`. Copy this `client secret` and keep it
-safely.
+On the `Personal access tokens (classic)` page, we shall generate a
+`token` for Authenticating `Sourcetree` while pushing code and set it’s
+`expiration` to `no`. We shall be adding the generated `token` to
+repositories to allow the communication from `Sourcetree`. Copy this
+`token` and keep it safely.
 
 This is a one time process that you do not repeat.
 
@@ -1312,8 +1312,8 @@ the create `R Studio` project to Sourcetree.
 
 Click on `Settings` tool once the `R Studio` project is open in
 `Sourcetree`, click on the `origin` url and click on edit. We shall add
-the `client secret` to the url. Add your `personal token` + `@` before
-`github.com` of the url.
+the `personal-access-token` to the url. Add your
+`personal-access-token` + `@` before `github.com` of the url.
 `https://{personal-access-token}@github.com/{my_repository}`.
 
 **Note**: `The contents inside {}` change accordingly.
